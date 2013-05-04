@@ -1,4 +1,6 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js legacy-ie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
