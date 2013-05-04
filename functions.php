@@ -33,4 +33,13 @@ should load up your own calls by editing this file.
  */
 require_once('vanilli/enqueue.php');
 
+
+/*** THEME SETUP -- REQUIRED **/
+/*
+vanilli/setup.php
+
+These are calls to register menus, sidebars, and custom types if needed. It also
+contains a skeleton for setting up speecial site icons.
+ */
+
 ?>

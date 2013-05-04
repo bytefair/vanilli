@@ -23,7 +23,6 @@ function v_enqueues() {
 			array(),
 			VERSION,
 			'all' );
-
 		wp_enqueue_script( 'modernizr' );
 		// Use a plugin to load from CDN if you want, make sure it loads in
 		// noConflict mode for compatibility
