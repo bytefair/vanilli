@@ -21,8 +21,10 @@ function v_enqueues() {
 			'style',
 			get_stylesheet_uri(),
 			array(),
-			VERSION );
+			VERSION,
+			'all' );
 
+		wp_enqueue_script( 'modernizr' );
 		// Use a plugin to load from CDN if you want, make sure it loads in
 		// noConflict mode for compatibility
 		wp_enqueue_script( 'jquery' );
