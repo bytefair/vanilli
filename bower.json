@@ -7,7 +7,6 @@
 		"components"
 	],
 	"dependencies": {
-		"modernizr": "latest",
-		"jquery": "latest"
+		"modernizr": "latest"
 	}
 }
