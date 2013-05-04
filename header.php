@@ -42,4 +42,4 @@
 				</div>
 			</header>
 
-			<div class="site-main">
+			<div class="site-main" role="main">

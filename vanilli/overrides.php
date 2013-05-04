@@ -28,6 +28,7 @@ function v_core_fixes() {
 	add_filter('gallery_style', 'v_gallery_style');
 }
 
+// all these functions come from bones, thx bro
 function v_strip_version( $src ) {
 	if ( strpos( $src, 'ver=' ) ) { $src = remove_query_arg( 'ver', $src ); }
 	return $src;

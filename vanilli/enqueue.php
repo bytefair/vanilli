@@ -7,6 +7,7 @@ Includes the style and script defnitions.
 
 add_action( 'wp_enqueue_scripts', 'v_site_enqueues', 999 );
 function v_site_enqueues() {
+
 	/*** REGISTER ***/
 
 	// I'm using the Bower version, you should customize this for production by
