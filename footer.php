@@ -7,7 +7,8 @@
 					</div>
 				</div>
 			</footer>
-		</div>
+		</div><!-- /.site-wrapper -->
+		<?php do_action( 'post_site_wrapper' ); ?>
 	</body>
 
 	<!-- code functions -->

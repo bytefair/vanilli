@@ -25,9 +25,9 @@
 		<!-- code functions -->
 		<?php wp_head(); ?>
 		<!-- /code functions -->
-
 	</head>
 	<body <?php body_class(); ?>>
+		<?php do_action( 'pre_site_wrapper' ); ?>
 		<div class="hfeed site-wrapper">
 			<header class="site-header" role="banner">
 				<div class="site-header-wrap clearfix">
