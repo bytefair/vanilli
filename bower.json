@@ -1,9 +1,13 @@
 {
-  "name": "vanilli",
-  "version": "0.0.0",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "components"
-  ]
+	"name": "vanilli",
+	"version": "0.0.0",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"components"
+	],
+	"dependencies": {
+		"modernizr": "latest",
+		"jquery": "latest"
+	}
 }
