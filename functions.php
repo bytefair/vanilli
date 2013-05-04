@@ -9,6 +9,9 @@ functionality. Please read the notes on each file to understand what each
 of the includes do.
  */
 
+/*** CONSTANTS ***/
+define( 'VERSION', '0.0.0' );
+define( 'THEME_URL', get_stylesheet_directory_uri() );
 
 /*** CORE OVERRIDES -- OPTIONAL ***/
 /*

@@ -5,8 +5,8 @@ core.php
 Contains overrides and changes to WP's defaults
  */
 
-add_action( 'after_setup_theme', 'mens_core_fixes', 15 );
-function mens_core_fixes() {
+add_action( 'after_setup_theme', 'v_core_fixes', 15 );
+function v_core_fixes() {
 	// debullshitification
 	remove_action( 'wp_head', 'wlwmanifest_link' ); // Windows Live Writer
 	remove_action( 'wp_head', 'rsd_link' ); // Really Simple Discovery
@@ -16,13 +16,13 @@ function mens_core_fixes() {
 	remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 );
 	remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );
 	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
-	// removes WP versioning on scripts, RSS and CSS
-	// this code comes from http://themble.com/bones/
-	add_filter( 'style_loader_src', 'v_strip_version', 9999 );
-	add_filter( 'script_loader_src', 'v_strip_version', 9999 );
+	// code below comes from http://themble.com/bones/
+	// Removes WP versioning on scripts, RSS and CSS for security
+	// Styles and scripts turned off by default so you can use native cachebusting
+	//add_filter( 'style_loader_src', 'v_strip_version', 9999 );
+	//add_filter( 'script_loader_src', 'v_strip_version', 9999 );
 	add_filter( 'the_generator', 'v_rss_version' );
 	// cleans up garbage CSS
-	// this code comes from http://themble.com/bones
 	add_filter( 'wp_head', 'v_remove_wp_widget_recent_comments_style', 1 );
 	add_action('wp_head', 'v_remove_recent_comments_style', 1);
 	add_filter('gallery_style', 'v_gallery_style');
