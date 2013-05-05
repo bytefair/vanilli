@@ -13,7 +13,8 @@ It lightens up my day, and that's oh so true
 Together we're one separated we're two
 To make you all mine, all mine is my desire
 'Cause you contain a quality, you that I admire
-You're pretty plain and simple, you rule my world so try to understand
+You're pretty plain and simple
+You rule my world so try to understand
 I'm in love, girl
 I'm in so love, girl
 I'm just in love, girl, and this is true
@@ -21,7 +22,7 @@ Girl, you know it's true
 Yes, you know it's true
 My love is for you
 This is some sort of thing, girl, I can't explain
-My emotions starts up when I hear your name
+My emotions start up when I hear your name
 Maybe your sweet, sweet voice would ring in my ear
 Then delay my system when you are near
 Come with your positive emotion, love-making enjoyin'
@@ -30,7 +31,8 @@ These feelings I get I often wonder why
 So I thought I might discuss this, girl, just you and I
 Now what you're wearing I don't care, as I've said before
 No reason that I like you, girl, just for what you are
-If I said I'd think about it, you rule my world so try to understand
+If I said I'd think about it,
+You rule my world so try to understand
 Ooh, ooh, ooh I love you";
 
 	$doperhymes = explode( "\n", $doperhymes );

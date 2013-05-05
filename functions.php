@@ -10,11 +10,18 @@ of the includes do. Anything marked "optional" can be commened out entirely.
 Obviously if it's marked "required" reverse applies.
  */
 
-/*** CONSTANTS ***/
-define( 'VERSION', '0.0.0' );
-define( 'THEME_URL', get_stylesheet_directory_uri() );
+/******************
+**** CONSTANTS ****
+******************/
+// Define your constants here, version should be the number of your theme.
+define('VERSION', '0.0.0'); // used for versioning of CSS for theme
+define('THEME_URL', get_stylesheet_directory_uri());
 
-/*** CORE OVERRIDES -- OPTIONAL ***/
+/*****************
+**** OPTIONAL ****
+******************/
+
+/*** CORE OVERRIDES ***/
 /*
 These are "core" edits that perform overrides of WordPress functions I feel
 are generally useless or sub-optimal. You can comment out this call without
@@ -22,27 +29,39 @@ affecting the theme's core functionality, but it will crap up your header.
  */
 require_once('vanilli/overrides.php');
 
-/*** ADMIN OVERRIDES -- OPTIONAL ***/
+/*** ADMIN OVERRIDES ***/
 /*
 These are optional edits and overrides of the default WP admin to remove
-annoyances and to add
+annoyances and to add some additional functionality. You can add your admin code
+here if you don't want to make a plugin.
  */
 require_once('vanilli/admin.php');
 
-/*** 31337 H4X0R$ ONLY -- ALL LAMES COMMENT THIS OUT -- OPTIONAL ***/
+/*** 31337 H4X0R$ ONLY -- ALL LAMES COMMENT THIS OUT ***/
 require_once('vanilli/vanillize.php');
 
-/*** ENQUEUE ASSETS -- REQUIRED ***/
+/*****************
+**** REQUIRED ****
+*****************/
+
+/*** ENQUEUE ASSETS ***/
 /*
 These are the calls that handle all the JS and CSS enqueing for Vanilli. You
 should load up your own calls by editing this file.
  */
 require_once('vanilli/enqueue.php');
 
-/*** THEME SETUP -- REQUIRED **/
+/*** THEME SETUP ***/
 /*
 These are calls to register menus, sidebars, and custom types if needed. It also
 contains a skeleton for setting up speecial site icons.
  */
+
+/*** GENERATORS ***/
+/*
+These are functions that are called directly from templates. They usually are
+meant to return complete HTML code.
+ */
+require_once('vanilli/generators.php');
 
 ?>
