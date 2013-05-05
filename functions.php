@@ -39,7 +39,6 @@ should load up your own calls by editing this file.
  */
 require_once('vanilli/enqueue.php');
 
-
 /*** THEME SETUP -- REQUIRED **/
 /*
 These are calls to register menus, sidebars, and custom types if needed. It also
