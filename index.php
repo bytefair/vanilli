@@ -9,7 +9,14 @@
 				<?php the_title(); ?>
 			</a>
 		</h1>
-		<h2>
+		<h2 class="entry-summary"></h2>
+		<p class="byline vcard">
+			<?php printf(
+							__( 'Posted <time class="published" datetime="%1$s">%2$s</time> by <span class="author fn">%3$s</span>', 'vanilli' ),
+							get_the_time( 'Y-m-j' ),
+							get_the_time( get_option( 'date_format' ) ),
+							v_get_the_author_posts_link() ); ?>
+		</p>
 	</header>
 
 	<div class="entry-content">
