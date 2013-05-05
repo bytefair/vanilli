@@ -7,6 +7,7 @@
 		"components"
 	],
 	"dependencies": {
-		"modernizr": "latest"
+		"modernizr": "latest",
+		"normalize.scss": "latest"
 	}
 }
