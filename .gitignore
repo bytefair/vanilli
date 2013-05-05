@@ -1,4 +1,5 @@
 .DS_Store
 codekit-config.json
-style.css
 components/*
+.sass-cache
+css/*
