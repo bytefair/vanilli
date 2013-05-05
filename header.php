@@ -32,7 +32,7 @@
 			<header class="site-header" role="banner">
 				<div class="site-header-wrap clearfix">
 					<h1 class="site-title">
-						<a href="<?php home_url( '/' ); ?>" title="<?php bloginfo( 'name' ); ?>">
+						<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name' ); ?>">
 							<?php bloginfo( 'name' ); ?>
 						</a>
 					</h1>
