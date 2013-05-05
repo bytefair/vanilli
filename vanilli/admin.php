@@ -20,4 +20,6 @@ function v_kill_dashboard_widgets() {
 	// remove_meta_box( 'dashboard_right_now', 'dashboard', 'core' );
 }
 
+
+
 ?>
