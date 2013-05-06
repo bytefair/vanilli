@@ -5,20 +5,12 @@
 	<head>
 		<meta charset="utf-8">
 
-		<!-- Chome Frame it if you got it -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-		<!-- mobile -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- for more esoteric mobile browsers -->
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
-
 		<!-- site title -->
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
 
-		<!-- action for inserting site icons, favicons or other custom meta -->
-		<?php do_action( 'v_site_meta' ); ?>
+		<!-- this action runs the hook that creates all the custom meta, be sure to
+		 look it over before you deploy anc make sure these are desired -->
+		<?php echo v_site_meta(); ?>
 
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
