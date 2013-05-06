@@ -15,7 +15,7 @@ function v_site_enqueues() {
 	// will actually need.
 	wp_register_script(
 		'modernizr',
-		get_stylesheet_directory_uri() . '/components/modernizr/modernizr.js',
+		THEME_URL . '/components/modernizr/modernizr.js',
 		array(),
 		'2.6.2',
 		false );
@@ -24,8 +24,8 @@ function v_site_enqueues() {
 
 	// Let's use Sass and compile into one stylsheet. Compress for production.
 	wp_enqueue_style(
-		'style',
-		get_stylesheet_uri(),
+		'main',
+		THEME_URL . '/css/main.css',
 		array(),
 		VERSION,
 		'all' );
