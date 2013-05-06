@@ -1,5 +1,18 @@
 # Vanilli, an aggro WordPress template for real HTML g's
 
+## How to Use
+
+Needs Compass gem and Bower package. Install dependencies with Bower and compile
+the stylesheet if you want to use it from sass/main.scss.
+
+## Structure
+
+/components
+/css
+/sass
+/vanilli
+functions.php
+
 ## Uses
 
 HTML5 Boilerplate
