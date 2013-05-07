@@ -44,18 +44,19 @@ require_once('vanilli/vanillize.php');
 **** REQUIRED ****
 *****************/
 
+/*** THEME FEATURE SETUP ***/
+/*
+These are calls to register menus, sidebars, post types, and many other
+WordPress native features.
+ */
+require_once('vanilli/setup.php');
+
 /*** ENQUEUE ASSETS ***/
 /*
 These are the calls that handle all the JS and CSS enqueing for Vanilli. You
 should load up your own calls by editing this file.
  */
 require_once('vanilli/enqueue.php');
-
-/*** THEME SETUP ***/
-/*
-These are calls to register menus, sidebars, and custom types if needed. It also
-contains a skeleton for setting up speecial site icons.
- */
 
 /*** GENERATORS ***/
 /*
