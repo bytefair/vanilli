@@ -2,7 +2,7 @@
 /*
 generators.php
 
-This file contains functions called directly from the templates. I put it here
+This file contains functions that generate HTML in the templates. I put it here
 generally to not obfuscate template code. We're talking about view logic in
 some cases. It should not go directly in the template if possible. I know that's
 how your daddy taught you how to do it ten years ago but that's suckfest coding.
@@ -45,7 +45,7 @@ function v_get_the_author_posts_link() {
 		return false;
 	$link = sprintf(
 		'<a href="%1$s" title="%2$s" rel="author">%3$s</a>',
-		get_author_posts_url( $authordata->ID, $authordata->user_nicename ),
+		get_author_posts_url( $authordata->ID, $authordata->user_nicename ), // we need a call to get nickname if it exists
 		esc_attr( sprintf( __( 'Posts by %s' ), get_the_author() ) ), // No further l10n needed, core will take care of this one
 		get_the_author()
 	);

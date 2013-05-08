@@ -12,7 +12,7 @@
 		<h2 class="entry-summary"></h2>
 		<p class="byline vcard">
 			<?php printf(
-							__( 'Posted <time class="published" datetime="%1$s">%2$s</time> by <span class="author fn">%3$s</span>', 'vanilli' ),
+							__( 'Posted on <time class="published" datetime="%1$s">%2$s</time> by <span class="author fn">%3$s</span>', 'vanilli' ),
 							get_the_time( 'Y-m-j' ),
 							get_the_time( get_option( 'date_format' ) ),
 							v_get_the_author_posts_link() ); ?>
@@ -22,6 +22,10 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 	</div>
+
+	<footer>
+
+	</footer>
 
 </article>
 
