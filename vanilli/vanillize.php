@@ -31,8 +31,7 @@ These feelings I get I often wonder why
 So I thought I might discuss this, girl, just you and I
 Now what you're wearing I don't care, as I've said before
 No reason that I like you, girl, just for what you are
-If I said I'd think about it,
-You rule my world so try to understand
+If I said I'd think about it
 Ooh, ooh, ooh I love you";
 
 	$doperhymes = explode( "\n", $doperhymes );
