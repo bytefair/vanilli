@@ -34,7 +34,7 @@ function v_site_meta() {
 
 
 
-/* from bones theme:
+/* from bones theme but prettified for nicknames
  * This is a modified the_author_posts_link() which just returns the link.
  *
  * This is necessary to allow usage of the usual l10n process with printf().
@@ -45,11 +45,19 @@ function v_get_the_author_posts_link() {
 		return false;
 	$link = sprintf(
 		'<a href="%1$s" title="%2$s" rel="author">%3$s</a>',
-		get_author_posts_url( $authordata->ID, $authordata->user_nicename ), // we need a call to get nickname if it exists
-		esc_attr( sprintf( __( 'Posts by %s' ), get_the_author() ) ), // No further l10n needed, core will take care of this one
-		get_the_author()
+		get_author_posts_url( $authordata->ID, $authordata->user_nicename ),
+		esc_attr( sprintf( __( 'Posts by %s' ), v_pretty_author() ) ), // No further l10n needed, core will take care of this one
+		v_pretty_author()
 	);
 	return $link;
 }
+// inserts nickname if defined
+function v_pretty_author() {
+	if ( get_the_author_meta( 'nickname' ) ) {
+		return get_the_author_meta( 'nickname' );
+	}
+	else return get_the_author();
+}
+
 
 ?>
