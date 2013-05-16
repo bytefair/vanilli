@@ -4,7 +4,9 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title><?php wp_title( '|', true, 'right' ); ?></title>
+		<title><?php
+			wp_title( '|', true, 'right' ); ?>
+		</title>
 
 		<!-- this action runs the hook that creates all the meta, be sure to
 		 look it over before you deploy and make sure these are desired --><?php
