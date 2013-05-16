@@ -46,18 +46,10 @@ function v_get_the_author_posts_link() {
 	$link = sprintf(
 		'<a href="%1$s" title="%2$s" rel="author">%3$s</a>',
 		get_author_posts_url( $authordata->ID, $authordata->user_nicename ),
-		esc_attr( sprintf( __( 'Posts by %s' ), v_pretty_author() ) ), // No further l10n needed, core will take care of this one
-		v_pretty_author()
+		esc_attr( sprintf( __( 'Posts by %s' ), get_the_author() ) ), // No further l10n needed, core will take care of this one
+		get_the_author()
 	);
 	return $link;
 }
-// inserts nickname if defined
-function v_pretty_author() {
-	if ( get_the_author_meta( 'nickname' ) ) {
-		return get_the_author_meta( 'nickname' );
-	}
-	else return get_the_author();
-}
-
 
 ?>
