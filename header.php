@@ -7,24 +7,26 @@
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
 
 		<!-- this action runs the hook that creates all the meta, be sure to
-		 look it over before you deploy and make sure these are desired -->
-		<?php echo v_site_meta(); ?>
+		 look it over before you deploy and make sure these are desired --><?php
+		echo v_site_meta(); ?>
 
-		<!-- code functions -->
-		<?php wp_head(); ?>
+		<!-- code functions --><?php
+		wp_head(); ?>
 		<!-- /code functions -->
 	</head>
-	<body <?php body_class(); ?>>
-		<?php do_action( 'pre_site_wrapper' ); ?>
+	<body <?php body_class(); ?>><?php
+		do_action( 'pre_site_wrapper' ); ?>
 		<div class="hfeed site-wrapper">
 			<header class="site-header" role="banner">
 				<div class="site-header-wrap clearfix">
 					<h1 class="site-title">
-						<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name' ); ?>">
-							<?php bloginfo( 'name' ); ?>
+						<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php
+							bloginfo( 'name' ); ?>
 						</a>
 					</h1>
-					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+					<h2 class="site-description"><?php
+						bloginfo( 'description' ); ?>
+					</h2>
 
 				</div>
 			</header>
