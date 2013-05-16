@@ -1,38 +1,51 @@
-<?php get_header(); ?>
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php
+/*
+index.php
 
-<article id="post-<?php the_ID(); ?>" class="hentry" <?php post_class( 'clearfix' ); ?> role="article">
+This is the file that is the ultimate fallback in a template. If nothing else
+matches at a higher priority, this template will be called.
+ */
+get_header();
+if (have_posts()) :
+	/** start the loop **/
+	while (have_posts()) :
+		/** unfurls the currently iterated post so you can call template tags **/
+		the_post(); ?>
 
-	<header>
-		<h1 class="entry-title">
-			<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-				<?php the_title(); ?>
-			</a>
-		</h1>
-		<h2 class="entry-summary"></h2>
-		<p class="byline vcard"><?php
-			printf(
-				__( 'Posted on <time class="published" datetime="%1$s">%2$s</time> by <span class="author fn">%3$s</span>', 'vanilli' ),
-				get_the_time( 'Y-m-j' ),
-				get_the_time( get_option( 'date_format' ) ),
-				v_get_the_author_posts_link() ); ?>
-		</p>
-		<p class="post-category"><?php
-			printf(__( 'Filed under: %1$s', 'vanilli' ), get_the_category_list( ', ' )); ?>
-		</p>
-	</header>
+		<article id="post-<?php the_ID(); ?>" class="hentry" <?php post_class( 'clearfix' ); ?> role="article">
 
-	<div class="entry-content clearfix">
-		<?php the_content(); ?>
-	</div>
+			<header>
+				<h1 class="entry-title">
+					<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php
+						the_title(); ?>
+					</a>
+				</h1>
+				<h2 class="entry-summary"></h2>
+				<p class="byline vcard"><?php
+					printf(
+						__( 'Posted on <time class="published" datetime="%1$s">%2$s</time> by <span class="author fn">%3$s</span>', 'vanilli' ),
+						get_the_time( 'Y-m-j' ),
+						get_the_time( get_option( 'date_format' ) ),
+						v_get_the_author_posts_link() ); ?>
+				</p>
+				<p class="post-category"><?php
+					printf(__( 'Filed under: %1$s', 'vanilli' ), get_the_category_list( ', ' )); ?>
+				</p>
+			</header>
 
-	<footer><?php
-			the_tags(); ?>
-	</footer>
+			<div class="entry-content clearfix"><?php
+				the_content(); ?>
+			</div>
 
-</article>
+			<footer><?php
+				the_tags(); ?>
+			</footer>
 
-<?php endwhile; ?>
+		</article><?php
 
-<?php endif; ?>
-<?php get_footer(); ?>
+	endwhile;
+	/** end the loop **/
+	do_action( 'post_loop_nav' );
+else: get_template_part( 'no-results', 'index' );
+endif;
+get_footer(); ?>
