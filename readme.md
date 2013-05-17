@@ -21,6 +21,12 @@ Normalize.css
 
 ## TODO
 
+archive.php
+search.php
+sidebar.php
+404.php
+comments.php
+
 0.1.0 - Basic page structure works, no CSS, code imported
 0.2.0 - Skeleton CSS
 0.3.0 - JavaScript systems set up
