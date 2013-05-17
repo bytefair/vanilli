@@ -9,6 +9,8 @@
 	<div class="entry-content clearfix"><?php
 		the_content();
 		wp_link_pages(); ?>
-	</div>
+	</div><?php
+
+	comments_template(); ?>
 
 </article>
