@@ -6,7 +6,6 @@
 				the_title(); ?>
 			</a>
 		</h1>
-		<h2 class="entry-summary"></h2>
 		<p class="byline vcard"><?php
 			printf(
 				__( 'Posted on <time class="published" datetime="%1$s">%2$s</time> by <span class="author fn">%3$s</span>', 'vanilli' ),
