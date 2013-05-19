@@ -24,8 +24,8 @@ function v_core_fixes() {
 	add_filter( 'the_generator', 'v_rss_version' );
 	// cleans up garbage CSS
 	add_filter( 'wp_head', 'v_remove_wp_widget_recent_comments_style', 1 );
-	add_action('wp_head', 'v_remove_recent_comments_style', 1);
-	add_filter('gallery_style', 'v_gallery_style');
+	add_action( 'wp_head', 'v_remove_recent_comments_style', 1 );
+	add_filter( 'gallery_style', 'v_gallery_style' );
 }
 
 // all these functions come from bones, thx bro
