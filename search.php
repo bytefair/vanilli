@@ -23,4 +23,5 @@ if (have_posts()) : ?>
 	do_action( 'post_loop_nav' );
 else: get_template_part( 'no-results', 'search' );
 endif;
+get_sidebar();
 get_footer(); ?>

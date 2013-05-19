@@ -14,8 +14,6 @@ Normalize.css
 ## TODO
 
 archive.php
-sidebar.php
-404.php
 comments.php
 
 ## ROADMAP

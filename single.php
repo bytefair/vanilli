@@ -11,4 +11,5 @@ while (have_posts()) {
 	get_template_part( 'content', 'single' );
 }
 do_action( 'post_loop_nav' );
+get_sidebar();
 get_footer(); ?>
