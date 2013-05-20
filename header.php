@@ -5,7 +5,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title><?php
-			wp_title(); ?>
+			wp_title( '|', true, 'right' );
+			bloginfo( 'name' ); ?>
 		</title>
 
 		<!-- this action runs the hook that creates all the meta, be sure to
