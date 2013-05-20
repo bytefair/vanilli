@@ -27,14 +27,8 @@ function v_site_meta() {
 	return $v_meta;
 }
 
+
 /*
- * This is the set of functions that call the menus. The fallback is called when
- * no menus are defined which simply creates menus from the pages list.
- */
-
-
-
-/* from bones theme but prettified for nicknames
  * This is a modified the_author_posts_link() which just returns the link.
  *
  * This is necessary to allow usage of the usual l10n process with printf().
@@ -52,4 +46,34 @@ function v_get_the_author_posts_link() {
 	return $link;
 }
 
+
+/*
+ * Handles the somewhat complicated header code for archive.php
+ */
+function v_archive_header() {
+	$archive_header = '<header class="archive-header"><h1 class="archive-title">';
+	if(is_category()) {
+		$archive_header .= __( 'Posts categorized ', 'vanilli' );
+		$archive_header .= single_cat_title( '', false );
+	} elseif(is_tag()) {
+		$archive_header .= __( 'Posts tagged ', 'vanilli' );
+		$archive_header .= single_tag_title( '', false );
+	} elseif(is_author()) {
+		global $post;
+		$author_id = $post->post_author;
+		$archive_header .= __( 'Posts written by ', 'vanilli' );
+		$archive_header .= get_the_author_meta( 'display_name', $author_id );
+	} elseif(is_day()) {
+		$archive_header .= __( 'Daily archives for ', 'vanilli' );
+		$archive_header .= get_the_time( 'l, F j, Y' );
+	} elseif(is_month()) {
+		$archive_header .= __( 'Monthly archives for ', 'vanilli' );
+		$archive_header .= get_the_time( 'F Y' );
+	} elseif(is_year()) {
+		$archive_header .= __( 'Yearly archives for ', 'vanilli' );
+		$archive_header .= get_the_time( 'Y' );
+	}
+	$archive_header .= '</h1></header>';
+	return $archive_header;
+}
 ?>
