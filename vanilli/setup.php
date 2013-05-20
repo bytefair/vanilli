@@ -25,6 +25,7 @@ function v_supports() {
   //   )
   // );
   add_theme_support( 'menus' );
+  // menus have to be registered in this array before they are called
   register_nav_menus( array(
     'main-menu' => __( 'Main navigation menu', 'vanilli' )
   ) );
@@ -32,10 +33,30 @@ function v_supports() {
 
 add_action( 'widgets_init', 'v_register_sidebars' );
 function v_register_sidebars() {
-  // Registering one sidebar, you can call these using dynamic_sidebar()
+  register_sidebar( array(
+    'id'            => 'sidebar1',
+    'name'          => __( 'Main sidebar', 'vanilli' ),
+    'description'   => __( 'The main widget area', 'vanilli' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h1 class="widget-title">',
+    'after_title'   => '</h1>'
+  ) );
 }
 
 add_action( 'v_site_navigation', 'v_define_site_navigation' );
 function v_define_site_navigation() {
+  wp_nav_menu( array(
+    'theme_location'  => 'main-menu',
+    'container'       => false,
+    'menu'            => __( 'Main navigation menu', 'vanilli' ),
+    'fallback_cb'     => 'v_default_site_navigation'
+  ) );
+}
 
+function v_default_site_navigation() {
+  wp_page_menu( array(
+    'show_home' => true,
+    'echo'      => true
+  ) );
 }

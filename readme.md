@@ -15,8 +15,7 @@
 ## TODO
 
 1. comments.php
-2. add menu support
-3. dynamic sidebar support
+2. customize search form
 
 ## ROADMAP
 
