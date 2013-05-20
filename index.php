@@ -15,7 +15,7 @@ if (have_posts()) {
 		get_template_part( 'content', get_post_format() );
 	}
 	/** end the loop **/
-	do_action( 'post_loop_nav' );
+  v_page_navi();
 } else get_template_part( 'no-results', 'index' );
 get_sidebar();
 get_footer(); ?>
