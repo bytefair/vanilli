@@ -7,13 +7,21 @@ the stylesheet if you want to use it from sass/main.scss.
 
 ## Uses
 
-HTML5 Boilerplate
-Bones
-Normalize.css
+* WordPress
+* HTML5 Boilerplate
+* Bones
+* Normalize.css
+* _s
+* Modernizr
+* Bower
+* Compass
+* Sass
 
 ## TODO
 
 1. comments.php
+2. add menu support
+3. dynamic sidebar support
 
 ## ROADMAP
 
