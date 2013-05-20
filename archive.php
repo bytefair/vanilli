@@ -16,7 +16,7 @@ if (have_posts()) {
 		get_template_part( 'content', 'archive' );
 	}
 	/** end the loop **/
-	do_action( 'post_loop_nav' );
+	do_action( 'v_pagination' );
 } else get_template_part( 'no-results', 'archive' );
 get_sidebar();
 get_footer(); ?>

@@ -1,8 +1,8 @@
 <?php
 /*
-page.php
+single.php
 
-This template matches any pages.
+This template matches any singular item.
  */
 get_header();
 while (have_posts()) {
@@ -10,6 +10,6 @@ while (have_posts()) {
 	the_post();
 	get_template_part( 'content', 'single' );
 }
-do_action( 'post_loop_nav' );
+do_action( 'v_pagination' );
 get_sidebar();
 get_footer(); ?>

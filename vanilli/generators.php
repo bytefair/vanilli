@@ -9,8 +9,8 @@ how your daddy taught you how to do it ten years ago but that's suckfest coding.
  */
 
 /*
- * This function simply concatenates meta tags to a variable for printing.
- * You can add additional tags by concatenating your own head tags.
+This function simply concatenates meta tags to a variable for printing. You can
+add additional tags by concatenating your own head tags.
  */
 function v_site_meta() {
 	// pingback
@@ -29,9 +29,9 @@ function v_site_meta() {
 
 
 /*
- * This is a modified the_author_posts_link() which just returns the link.
- *
- * This is necessary to allow usage of the usual l10n process with printf().
+This is a modified the_author_posts_link() which just returns the link.
+
+This is necessary to allow usage of the usual l10n process with printf().
  */
 function v_get_the_author_posts_link() {
 	global $authordata;
@@ -49,7 +49,7 @@ function v_get_the_author_posts_link() {
 
 
 /*
- * Handles the somewhat complicated header code for archive.php
+Handles the somewhat complicated header code for archive.php
  */
 function v_archive_header() {
 	$archive_header = '<header class="archive-header"><h1 class="archive-title">';
@@ -78,7 +78,10 @@ function v_archive_header() {
 	return $archive_header;
 }
 
-/* awesome pagination rippes from bones */
+/*
+awesome pagination ripped from bones
+ */
+add_action( 'v_pagination', 'v_page_navi' );
 function v_page_navi($before = '', $after = '') {
 	global $wpdb, $wp_query;
 	$request = $wp_query->request;

@@ -17,7 +17,7 @@
 		<!-- /code functions -->
 	</head>
 	<body <?php body_class(); ?>><?php
-		do_action( 'pre_site_wrapper' ); ?>
+		do_action( 'v_pre_site_wrapper' ); ?>
 		<div class="hfeed site-wrapper">
 			<header class="site-header" role="banner">
 				<div class="site-header-wrap clearfix">
@@ -29,7 +29,9 @@
 					<h2 class="site-description"><?php
 						bloginfo( 'description' ); ?>
 					</h2>
-
+					<nav role="navigation"><?php
+						do_action( 'v_site_navigation' ); ?>
+					</nav>
 				</div>
 			</header>
 
