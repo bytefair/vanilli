@@ -22,4 +22,5 @@ Normalize.css
 * 0.3.0 - JavaScript systems set up
 * 0.4.0 - Fancy CSS
 * 0.5.0 - Custom functionality and plugins?
+* 0.6.0 - Theme cleanup, favicons, etc
 * 1.0.0 - release
