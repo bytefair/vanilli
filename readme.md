@@ -19,6 +19,10 @@ hitting 0.0.1 anyway
 2. customize search form
 3. vertical CSS
 4. suckerfish
+5. related posts plugin
+6. easy shortcode creation
+7. stilts for custom types? not sure about this...
+8. create a cakefile to automatically build site, then rename normalize, etc
 
 ## ROADMAP
 
@@ -34,6 +38,8 @@ hitting 0.0.1 anyway
 
 1. Install Bower dependencies.
 2. Set up your theme options. Loading order is pretty clear in functions.php.
+Things listed as optional are optional and can be entirely removed whereas
+functionality listed as required will break the theme if removed.
 
 ## Style Notes
 

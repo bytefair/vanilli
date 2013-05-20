@@ -8,7 +8,7 @@
 	],
 	"dependencies": {
 		"modernizr": "latest",
-		"normalize.scss": "latest",
+		"normalize-css": "latest",
 		"bourbon": "latest",
 		"neat": "latest"
 	}
