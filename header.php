@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title><?php
-			wp_title( '|', true, 'right' ); ?>
+			wp_title(); ?>
 		</title>
 
 		<!-- this action runs the hook that creates all the meta, be sure to

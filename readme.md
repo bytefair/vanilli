@@ -13,8 +13,7 @@ Normalize.css
 
 ## TODO
 
-archive.php
-comments.php
+1. comments.php
 
 ## ROADMAP
 
