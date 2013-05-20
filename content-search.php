@@ -19,7 +19,7 @@
 	</header>
 
 	<div class="entry-content clearfix"><?php
-		the_excerpt(); ?>
+		the_excerpt( 'Continue reading &rarr;' ); ?>
 	</div>
 
 </article>

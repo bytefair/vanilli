@@ -19,7 +19,7 @@
 	</header>
 
 	<div class="entry-content clearfix"><?php
-		the_content();
+		the_content( 'Continue reading &rarr;' );
 		wp_link_pages(); ?>
 	</div>
 
