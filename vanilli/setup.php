@@ -29,6 +29,11 @@ function v_supports() {
   register_nav_menus( array(
     'main-menu' => __( 'Main navigation menu', 'vanilli' )
   ) );
+  // load translations that are available
+  load_theme_textdomain( 'vanilli', get_template_directory() .'/translation' );
+  $locale = get_locale();
+  $locale_file = get_template_directory() . "/translation/$locale.php";
+  if ( is_readable($locale_file) ) require_once($locale_file);
 }
 
 add_action( 'widgets_init', 'v_register_sidebars' );
