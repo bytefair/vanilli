@@ -14,14 +14,17 @@
 
 ## TODO
 
-1. comments.php
+1. comments.php deserves some serious thinking and work - will revisit but
+hitting 0.0.1 anyway
 2. customize search form
+3. vertical CSS
+4. suckerfish
 
 ## ROADMAP
 
 * 0.1.0 - Basic page structure works, no CSS, code imported
 * 0.2.0 - Skeleton CSS
-* 0.3.0 - JavaScript systems set up
+* 0.3.0 - JavaScript systems set up including suckerfish?
 * 0.4.0 - Fancy CSS
 * 0.5.0 - Custom functionality and plugins?
 * 0.6.0 - Theme cleanup, favicons, etc
