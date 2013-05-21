@@ -1,4 +1,21 @@
-// imports from Bower
+// imports from Bower, you cannot remove these unless you remove all CSS
 @import "../components/normalize-css/normalize.css";
 @import "../components/bourbon/app/assets/stylesheets/bourbon";
 @import "../components/neat/app/assets/stylesheets/neat";
+
+// you can change your entire skeleton base with a few edits here
+@import "skeleton/definitions"; // variables for calculations and mixins
+
+// skeleton CSS - good for custom site builders
+@import "skeleton/typography";
+// @import "skeleton/layout";
+
+// these styles are REQUIRED by WP.com and you should define them too as they
+// control code users can add from the WYSIWYG editor.
+@import "wp-required";
+
+// optional CSS - good for themers or if you need more build assistance - these
+// are more opinionated styles, if you want skeleton CSS, simply delete these
+// @import "optional/color";
+
+// sample themes to show you what you can do with only CSS code
