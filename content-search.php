@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" class="hentry" <?php post_class( 'clearfix' ); ?> role="article">
+<article id="post-<?php the_ID(); ?>" class="hentry" <?php post_class(); ?> role="article">
 
 	<header>
 		<h1 class="entry-title">
@@ -18,7 +18,7 @@
 		</p>
 	</header>
 
-	<div class="entry-content clearfix"><?php
+	<div class="entry-content"><?php
 		the_excerpt( 'Continue reading &rarr;' ); ?>
 	</div>
 

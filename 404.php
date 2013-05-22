@@ -10,7 +10,7 @@ get_header(); ?>
   _e( '404 - Where are you trying to go?', 'vanilli' ); ?>
 </h1>
 
-<div class="entry-content clearfix"><?php
+<div class="entry-content"><?php
   /*
   The 404 is such a good opportunity for you to do cool marketing or have some
   fun, and here you are throwing a search form. You should probably replace the

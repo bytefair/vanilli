@@ -21,7 +21,7 @@
 		do_action( 'v_pre_site_wrapper' ); ?>
 		<div class="hfeed site-wrapper">
 			<header class="site-header" role="banner">
-				<div class="site-header-wrap clearfix">
+				<div class="site-header-wrap">
 					<h1 class="site-title">
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php
 							bloginfo( 'name' ); ?>
@@ -30,7 +30,7 @@
 					<h2 class="site-description"><?php
 						bloginfo( 'description' ); ?>
 					</h2>
-					<nav role="navigation" class="site-nav clearfix"><?php
+					<nav role="navigation" class="site-nav"><?php
 						do_action( 'v_site_navigation' ); ?>
 					</nav>
 				</div>
