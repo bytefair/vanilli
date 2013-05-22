@@ -2,6 +2,8 @@
 @import "../components/normalize-css/normalize.css";
 @import "../components/bourbon/app/assets/stylesheets/bourbon";
 @import "../components/neat/app/assets/stylesheets/neat";
+// import vertical rhythm module from Compass
+@import "vendor/vertical-rhythm";
 
 // you can change your entire skeleton base with a few edits here
 @import "skeleton/definitions"; // variables for calculations and mixins
