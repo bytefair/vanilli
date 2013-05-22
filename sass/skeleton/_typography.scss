@@ -1,19 +1,40 @@
-/** Typographic Scale **/
+/*
+I have created this font-scale-multiple mixin to provide an easier way to
+establish a vertical rhythm without all the calculations normally required.
+All that's required to set it up is two optional variables, $scale-multiple
+and $lines. $scale-multiple is how far up the scale defined in _definition.scss
+you want to go with that text block. The second defines the line-height as
+multiples of the base-line height. If you do not include a number here, Compass
+will automatically determine a non-overlapping multiple. If you hate the idea
+of using a standard typographic scale, just delete this code and you can use
+all of Compass's vertical rhythm mixins which I've included.
+
+You can chage the typographic scale in _definition.scss as I've included all
+common ones. If the only thing you wish to do is change the typographic scale,
+then this variable is the only thing you'll need to change. I've chosen perfect
+fourth by default since it's harmonious and neutral. Braver souls may choose to
+venture up the scale for great drama!
+
+Vertical Rhythm module docs:
+http://compass-style.org/reference/compass/typography/vertical_rhythm/
+ */
+@mixin font-scale-multiple ($scale-multiple: 0, $lines: 1) {
+	@include adjust-font-size-to(
+		modular-scale( $base-font-size, $scale-multiple, $font-scale),
+		$lines
+	);
+}
+
+$round-to-nearest-half-line: true;
+
 h1 {
-	@include adjust-font-size-to( modular-scale($base-font-size, 4, $font-scale) );
+	@include font-scale-multiple(4, $lines: 2);
+	// Want to adjust leading, trailing, and padding of block elements? Use the
+	// included rhythm mixin from Compass
+	// http://compass-style.org/reference/compass/typography/vertical_rhythm/
 }
-h2 {
-	@include adjust-font-size-to( modular-scale($base-font-size, 3, $font-scale) );
-}
-h3 {
-	@include adjust-font-size-to( modular-scale($base-font-size, 2, $font-scale) );
-}
-h4 {
-	@include adjust-font-size-to( modular-scale($base-font-size, 1, $font-scale) );
-}
-h5 {
-	@include adjust-font-size-to( modular-scale($base-font-size, 0, $font-scale) );
-}
-h6 {
-	@include adjust-font-size-to( modular-scale($base-font-size, -1, $font-scale) );
-}
+h2 { @include font-scale-multiple(3, $lines: 2) }
+h3 { @include font-scale-multiple(2) }
+h4 { @include font-scale-multiple(1) }
+h5 { @include font-scale-multiple() }
+h6 { @include font-scale-multiple(-1) }

@@ -40,6 +40,12 @@ hitting 0.0.1 anyway
 2. Set up your theme options. Loading order is pretty clear in functions.php.
 Things listed as optional are optional and can be entirely removed whereas
 functionality listed as required will break the theme if removed.
+3. Once theme functionality is set, you will probably want to address the CSS
+stack. Start with sass/main.scss to see how code is loaded. If you're doing a
+totally custom site, you probably want to delete the optional CSS. Skeleton CSS
+provides a wonderful coherent framework to operate with and only requires a few
+variable adjustments to make it exactly how you want it. I will document the
+code inside the relevant files, so be sure to look through them.
 
 ## Style Notes
 
