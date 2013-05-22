@@ -18,7 +18,7 @@ venture up the scale for great drama!
 Vertical Rhythm module docs:
 http://compass-style.org/reference/compass/typography/vertical_rhythm/
  */
-@mixin font-scale-multiple ($scale-multiple: 0, $lines: 1) {
+@mixin font-scale-multiple ($scale-multiple, $lines: 1) {
 	@include adjust-font-size-to(
 		modular-scale( $base-font-size, $scale-multiple, $font-scale),
 		$lines
@@ -29,9 +29,9 @@ http://compass-style.org/reference/compass/typography/vertical_rhythm/
 // included rhythm mixin from Compass. Just be aware that using this will reset
 // your leader and trailer margins so you'll need to include those.
 // http://compass-style.org/reference/compass/typography/vertical_rhythm/
-h1 { @include font-scale-multiple(4, $lines: 2) }
-h2 { @include font-scale-multiple(3, $lines: 2) }
-h3 { @include font-scale-multiple(2) }
-h4 { @include font-scale-multiple(1) }
-h5 { @include font-scale-multiple() }
+h1 { @include font-scale-multiple(4)  }
+h2 { @include font-scale-multiple(3)  }
+h3 { @include font-scale-multiple(2)  }
+h4 { @include font-scale-multiple(1)  }
+h5 { @include font-scale-multiple(0)  }
 h6 { @include font-scale-multiple(-1) }
