@@ -25,14 +25,11 @@ http://compass-style.org/reference/compass/typography/vertical_rhythm/
 	);
 }
 
-$round-to-nearest-half-line: true;
-
-h1 {
-	@include font-scale-multiple(4, $lines: 2);
-	// Want to adjust leading, trailing, and padding of block elements? Use the
-	// included rhythm mixin from Compass
-	// http://compass-style.org/reference/compass/typography/vertical_rhythm/
-}
+// Want to adjust leading, trailing, and padding of block elements? Use the
+// included rhythm mixin from Compass. Just be aware that using this will reset
+// your leader and trailer margins so you'll need to include those.
+// http://compass-style.org/reference/compass/typography/vertical_rhythm/
+h1 { @include font-scale-multiple(4, $lines: 2) }
 h2 { @include font-scale-multiple(3, $lines: 2) }
 h3 { @include font-scale-multiple(2) }
 h4 { @include font-scale-multiple(1) }
