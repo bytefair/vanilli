@@ -112,9 +112,9 @@ function v_page_navi($before = '', $after = '') {
 	if($start_page <= 0) {
 		$start_page = 1;
 	}
-	echo $before.'<nav class="page-navigation"><ol class="bones_page_navi clearfix">'."";
+	echo $before.'<nav class="page-navigation"><ol class="page_navi">'."";
 	if ($start_page >= 2 && $pages_to_show < $max_page) {
-		$first_page_text = __( "First", 'bonestheme' );
+		$first_page_text = __( "First", 'vanilli' );
 		echo '<li class="bpn-first-page-link"><a href="'.get_pagenum_link().'" title="'.$first_page_text.'">'.$first_page_text.'</a></li>';
 	}
 	echo '<li class="bpn-prev-link">';
@@ -131,7 +131,7 @@ function v_page_navi($before = '', $after = '') {
 	next_posts_link('>>');
 	echo '</li>';
 	if ($end_page < $max_page) {
-		$last_page_text = __( "Last", 'bonestheme' );
+		$last_page_text = __( "Last", 'vanilli' );
 		echo '<li class="bpn-last-page-link"><a href="'.get_pagenum_link($max_page).'" title="'.$last_page_text.'">'.$last_page_text.'</a></li>';
 	}
 	echo '</ol></nav>'.$after."";
