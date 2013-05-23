@@ -17,6 +17,8 @@ venture up the scale for great drama!
 
 Vertical Rhythm module docs:
 http://compass-style.org/reference/compass/typography/vertical_rhythm/
+
+I hope someday Bourbon implements these tools because they are swag as eff.
  */
 @mixin font-scale-multiple ($scale-multiple, $lines: 1) {
 	@include adjust-font-size-to(

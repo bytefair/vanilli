@@ -4,7 +4,7 @@
   else : ?>
     <div class="widget">
       <h1 class="widget-title">Static Sidebar</h1>
-      <p>Make a static sidebar in sidebar.php</p>
+      <p>Girl, it looks like you need to either define a static sidebar in sidebar.php or you need to add some widgets.</p>
     </div><?php
   endif; ?>
 </aside>

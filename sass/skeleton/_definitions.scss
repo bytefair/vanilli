@@ -1,9 +1,11 @@
-// Definitions of various modular typography scales. Unless you know what you
-// are doing, you should probably choose one of these. They are typeface
-// dependent so be sure that your base sizes are set accurately.
-// http://alistapart.com/article/more-meaningful-typography
-// http://blog.8thlight.com/billy-whited/2011/10/28/r-a-ela-tional-design.html
-// http://24ways.org/2011/composing-the-new-canon/
+/*
+Definitions of various modular typography scales. Unless you know what you
+are doing, you should probably choose one of these. They are typeface
+dependent so be sure that your base sizes are set accurately.
+http://alistapart.com/article/more-meaningful-typography
+http://blog.8thlight.com/billy-whited/2011/10/28/r-a-ela-tional-design.html
+http://24ways.org/2011/composing-the-new-canon/
+ */
 $unison:         1;
 $minor-second:   1.067;
 $major-second:   1.125;
