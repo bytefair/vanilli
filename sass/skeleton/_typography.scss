@@ -1,4 +1,33 @@
 /*
+Definitions of various modular typography scales. Unless you know what you
+are doing, you should probably choose one of these. They are typeface
+dependent so be sure that your base sizes are set accurately.
+http://alistapart.com/article/more-meaningful-typography
+http://blog.8thlight.com/billy-whited/2011/10/28/r-a-ela-tional-design.html
+http://24ways.org/2011/composing-the-new-canon/
+ */
+$unison:         1;
+$minor-second:   1.067;
+$major-second:   1.125;
+$minor-third:    1.2;
+$major-third:    1.25;
+$perfect-fourth: 1.333;
+$aug-fourth:     1.414;
+$perfect-fifth:  1.5;
+$minor-sixth:    1.6;
+$golden-section: 1.618;
+$major-sixth:    1.667;
+$minor-seventh:  1.778;
+$major-seventh:  1.875;
+$octave:         2;
+$major-tenth:    2.5;
+$major-eleventh: 2.667;
+$major-twelfth:  3;
+$double-octave:  4;
+// and set it
+$font-scale: $perfect-fourth;
+
+/*
 I have created this font-scale-multiple mixin to provide an easier way to
 establish a vertical rhythm without all the calculations normally required.
 All that's required to set it up is two optional variables, $scale-multiple
@@ -46,3 +75,6 @@ h6 { @include font-scale-multiple(-1) }
 // Google Fonts Code activation code in v_site_meta(). Let's face it, Helvetica
 // is worn out as a default.
 html { font-family: "Source Sans Pro", $helvetica; }
+
+// we need a little breathing room in the articles
+.blog article { @include trailer(5); }
