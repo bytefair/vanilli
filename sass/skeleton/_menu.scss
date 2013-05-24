@@ -1,0 +1,44 @@
+.menu {
+	width: 100%;
+	@include clearfix;
+	// this definition keeps the nav button-like
+	a {
+		display: block;
+		width: 100%;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			float: left;
+			position: relative;
+			padding: 0 1em;
+			// shows and hides the submenus on hover
+			&:hover > ul.children {
+				display: block;
+			}
+			/** SUB MENU STYLES **/
+			ul {
+				background: white;
+				display: none;
+				float: left;
+				position: absolute;
+				left: 0;
+				top: 1.5em;
+				z-index: 9999;
+				// width of the sub-menus
+				$sub-menu-width: 100%;
+				a {
+					width: $sub-menu-width;
+				}
+				ul { // all further sub-menus will float $sub-menu-width
+					width: $sub-menu-width;
+					left: $sub-menu-width;
+					top: 0;
+					left: 100%;
+				}
+			}
+		}
+	}
+}

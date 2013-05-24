@@ -1,3 +1,7 @@
+/**************************************
+** REQUIRED (if using framework CSS) **
+**************************************/
+
 // imports from Bower, you cannot remove these unless you remove all CSS
 @import "../components/normalize-css/normalize.css";
 @import "../components/bourbon/app/assets/stylesheets/bourbon";
@@ -5,10 +9,25 @@
 // import vertical rhythm module from Compass
 @import "vendor/vertical-rhythm";
 
+
+/****************
+** RECOMMENDED **
+****************/
+
 // skeleton CSS - good for custom site builders
 @import "skeleton/typography";
 // @import "skeleton/layout";
+
+// required editor styles for WP, don't forget them
 @import "skeleton/wp-required";
+
+// suckerfish, sucker
+@import "skeleton/menu";
+
+
+/*************
+** OPTIONAL **
+*************/
 
 // optional CSS - good for themers or if you need more build assistance - these
 // are more opinionated styles, if you want skeleton CSS, simply delete these
