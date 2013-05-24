@@ -21,19 +21,28 @@ http://compass-style.org/reference/compass/typography/vertical_rhythm/
 I hope someday Bourbon implements these tools because they are swag as eff.
  */
 @mixin font-scale-multiple ($scale-multiple, $lines: 1) {
-	@include adjust-font-size-to(
-		modular-scale( $base-font-size, $scale-multiple, $font-scale),
-		$lines
-	);
+  @include adjust-font-size-to(
+    modular-scale( $base-font-size, $scale-multiple, $font-scale),
+    $lines
+  );
 }
+
+// up your type game son
+$base-font-size: 18px; // these must be in px for Compass
+$base-line-height: $base-font-size * 1.5;
+@include establish-baseline;
 
 // Want to adjust leading, trailing, and padding of block elements? Use the
 // included rhythm mixin from Compass. Just be aware that using this will reset
 // your leader and trailer margins so you'll need to include those.
 // http://compass-style.org/reference/compass/typography/vertical_rhythm/
-h1 { @include font-scale-multiple(4)  }
-h2 { @include font-scale-multiple(3)  }
+h1 { @include font-scale-multiple(4, 2)  }
+h2 { @include font-scale-multiple(3, 2)  }
 h3 { @include font-scale-multiple(2)  }
 h4 { @include font-scale-multiple(1)  }
 h5 { @include font-scale-multiple(0)  }
 h6 { @include font-scale-multiple(-1) }
+
+// Google Fonts Code activation code in v_site_meta(). Let's face it, Helvetica
+// is worn out as a default.
+html { font-family: "Source Sans Pro", $helvetica; }
