@@ -14,11 +14,10 @@
 
 ## TODO
 
-1. comments.php deserves some serious thinking and work - will revisit but
-hitting 0.0.1 anyway
+1. comments.php has to be written, I'm not down with the default structure as it
+makes for difficult aggregation
 2. customize search form
 3. vertical CSS
-4. suckerfish
 5. related posts plugin
 6. easy shortcode creation
 7. stilts for custom types? not sure about this...
@@ -47,7 +46,25 @@ provides a wonderful coherent framework to operate with and only requires a few
 variable adjustments to make it exactly how you want it. I will document the
 code inside the relevant files, so be sure to look through them.
 
-## Style Notes
+## Managing Stylesheets in Vanilli
+
+I have made all the styles for Vanilli in Sass, specifically SCSS so I can
+import vanilla CSS seamlessly. I personally prefer to use the Sass syntax, but
+I think it's more generally useful to include SCSS in projects to seamlessly
+integrate with any vendor CSS.
+
+### Can You Add Preprocessor Framework X?
+
+no
+
+I like Stylus also but don't see any advantages over Sass if you're not in Node
+or something and I honestly hate Less. Don't write me about putting Less
+versions of thesesheets because I do not care. I hate the syntax and it feels
+unnatural. SCSS, despite losing some advantages of Ruby-style Sass feels like a
+natural extension of CSS. Less's continuing popularity is absolutely baffling to
+me. I assume it's entirely related to Twitter Bootstrap. Okay, blog post over.
+
+## Code Style Notes
 
 Tabs, not spaces. Set your own width, I don't care. I personally use 2 space tab
 characters for indentation. Please stick with this if you contribute. When
