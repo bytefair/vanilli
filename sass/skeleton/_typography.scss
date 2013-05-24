@@ -65,16 +65,16 @@ $base-line-height: $base-font-size * 1.5;
 // included rhythm mixin from Compass. Just be aware that using this will reset
 // your leader and trailer margins so you'll need to include those.
 // http://compass-style.org/reference/compass/typography/vertical_rhythm/
-h1 { @include font-scale-multiple(4, 2)  }
-h2 { @include font-scale-multiple(3, 2)  }
-h3 { @include font-scale-multiple(2)  }
-h4 { @include font-scale-multiple(1)  }
-h5 { @include font-scale-multiple(0)  }
-h6 { @include font-scale-multiple(-1) }
+h1 { @include font-scale-multiple(4, 2) }
+h2 { @include font-scale-multiple(3, 2) }
+h3 { @include font-scale-multiple(2)    }
+h4 { @include font-scale-multiple(1)    }
+h5 { @include font-scale-multiple(0)    }
+h6 { @include font-scale-multiple(-1)   }
 
 // Google Fonts Code activation code in v_site_meta(). Let's face it, Helvetica
 // is worn out as a default.
 html { font-family: "Source Sans Pro", $helvetica; }
 
 // we need a little breathing room in the articles
-.blog article { @include trailer(5); }
+.blog article { @include trailer(3); }
