@@ -1,0 +1,38 @@
+/*
+http://codex.wordpress.org/Gallery_Shortcode
+
+Galleries got mightly fancy in WP 3.5 and now you have many options for
+inserting different types of galleries from the backend. There is a column
+settings you can change but the default remains 3.
+ */
+.gallery {
+	.gallery-item {
+		float: left;
+		.gallery-icon {
+			img {
+				display: block;
+				margin: 0 auto;
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		.gallery-caption {
+			text-align: center;
+			margin: 0;
+			padding: 5px 3px 10px;
+			@include font-scale-multiple(-1);
+		}
+	}
+}
+
+/*
+This loop handles the width depending on how many columns you want in your
+gallery. It's not perfect but it's a good start.
+ */
+@for $i from 1 through 10 {
+	.gallery-columns-#{$i} {
+		.gallery-item {
+			width: 100%/$i;
+		}
+	}
+}
