@@ -14,8 +14,6 @@
 
 ## TODO
 
-1. comments.php has to be written, I'm not down with the default structure as it
-makes for difficult aggregation
 2. customize search form
 3. vertical CSS
 5. related posts plugin
