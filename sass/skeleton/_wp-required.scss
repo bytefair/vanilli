@@ -5,82 +5,82 @@ $wp-core-right-margin: 5px 0 20px 20px;
 $wp-core-center-margin: 5px auto 5px auto;
 
 .alignnone {
-    margin: $wp-core-left-margin;
+	margin: $wp-core-left-margin;
 }
 
 .aligncenter,
 div.aligncenter {
-    display: block;
-    margin: $wp-core-center-margin;
+	display: block;
+	margin: $wp-core-center-margin;
 }
 
 .alignright {
-    float: right;
-    margin: $wp-core-right-margin;
+	float: right;
+	margin: $wp-core-right-margin;
 }
 
 .alignleft {
-    float: left;
-    margin: $wp-core-left-margin;
+	float: left;
+	margin: $wp-core-left-margin;
 }
 
 .aligncenter {
-    display: block;
-    margin: $wp-core-center-margin;
+	display: block;
+	margin: $wp-core-center-margin;
 }
 
 a img.alignright {
-    float: right;
-    margin: $wp-core-right-margin;
+	float: right;
+	margin: $wp-core-right-margin;
 }
 
 a img.alignnone {
-    margin: $wp-core-left-margin;
+	margin: $wp-core-left-margin;
 }
 
 a img.alignleft {
-    float: left;
-    margin: $wp-core-left-margin;
+	float: left;
+	margin: $wp-core-left-margin;
 }
 
 a img.aligncenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+	display: block;
+	margin-left: auto;
+	margin-right: auto
 }
 
 .wp-caption {
-    background: #fff;
-    border: 1px solid lightgray;
-    max-width: 96%; /* Image does not overflow the content area */
-    padding: 5px 3px 10px;
-    text-align: center;
+	background: #fff;
+	border: 1px solid lightgray;
+	max-width: 96%; /* Image does not overflow the content area */
+	padding: 5px 3px 10px;
+	text-align: center;
 }
 
 .wp-caption.alignnone {
-    margin: $wp-core-left-margin;
+	margin: $wp-core-left-margin;
 }
 
 .wp-caption.alignleft {
-    margin: $wp-core-left-margin;
+	margin: $wp-core-left-margin;
 }
 
 .wp-caption.alignright {
-    margin: $wp-core-right-margin;
+	margin: $wp-core-right-margin;
 }
 
 .wp-caption img {
-    border: 0 none;
-    height: auto;
-    margin: 0;
-    max-width: 98.5%;
-    padding: 0;
-    width: auto;
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 98.5%;
+	padding: 0;
+	width: auto;
 }
 
 .wp-caption p.wp-caption-text {
-    @include font-scale-multiple(-1);
-    line-height: $font-scale;
-    margin: 0;
-    padding: 0 4px 5px;
+	@include font-scale-multiple(-1);
+	line-height: $font-scale;
+	margin: 0;
+	padding: 0 4px 5px;
 }
