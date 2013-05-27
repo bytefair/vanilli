@@ -7,3 +7,4 @@ Think vertical spacing issues mostly.
 // we need a little breathing room in the articles
 .blog article { @include trailer(3); }
 
+.site-wrapper { padding: 0 2%; }

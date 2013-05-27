@@ -5,6 +5,8 @@
 // imports from Bower, you cannot remove these unless you remove all CSS
 @import "../components/normalize-css/normalize.css";
 @import "../components/bourbon/app/assets/stylesheets/bourbon";
+// neat settings must be loaded first
+@import "helpers/neat-settings";
 @import "../components/neat/app/assets/stylesheets/neat";
 // import vertical rhythm module from Compass
 @import "vendor/vertical-rhythm";
