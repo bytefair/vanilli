@@ -13,14 +13,12 @@
 		li {
 			float: left;
 			position: relative;
-			padding: 0 1em;
 			// shows and hides the submenus on hover
 			&:hover > ul.children {
 				display: block;
 			}
 			/** SUB MENU STYLES **/
 			ul {
-				background: white;
 				display: none;
 				float: left;
 				position: absolute;
