@@ -4,11 +4,13 @@ page.php
 
 This template matches any pages.
  */
-get_header();
-while (have_posts()) {
-	/** unfurls the currently iterated post so you can call template tags **/
-	the_post();
-	get_template_part( 'content', 'page' );
-}
+get_header(); ?>
+<div class="site-content"><?php
+  while (have_posts()) {
+  	/** unfurls the currently iterated post so you can call template tags **/
+  	the_post();
+  	get_template_part( 'content', 'page' );
+  } ?>
+  </div><?php
 get_sidebar();
 get_footer(); ?>
