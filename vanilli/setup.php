@@ -53,15 +53,12 @@ add_action( 'v_site_navigation', 'v_define_site_navigation' );
 function v_define_site_navigation() {
   wp_nav_menu( array(
     'theme_location'  => 'main-menu',
-    'container'       => false,
+    'container'       => 'nav',
     'menu'            => __( 'Main navigation menu', 'vanilli' ),
     'fallback_cb'     => 'v_default_site_navigation'
   ) );
 }
 
 function v_default_site_navigation() {
-  wp_page_menu( array(
-    'show_home' => true,
-    'echo'      => true
-  ) );
+  // do whatever you want here
 }

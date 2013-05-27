@@ -37,7 +37,11 @@
 2. Set up your theme options. Loading order is pretty clear in functions.php.
 Things listed as optional are optional and can be entirely removed whereas
 functionality listed as required will break the theme if removed.
-3. Once theme functionality is set, you will probably want to address the CSS
+3. You probably want to install the Theme Unit Test import which can be
+downloaded at http://codex.wordpress.org/Theme_Unit_Test. Tons of details
+regarding theme testing can be found here. You should use the imported posts
+as a sample blog to make sure you don't miss any important cases.
+4. Once theme functionality is set, you will probably want to address the CSS
 stack. Start with sass/main.scss to see how code is loaded. If you're doing a
 totally custom site, you probably want to delete the optional CSS. Skeleton CSS
 provides a wonderful coherent framework to operate with and only requires a few

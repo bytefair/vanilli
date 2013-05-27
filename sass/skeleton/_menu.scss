@@ -1,40 +1,39 @@
 .menu {
 	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 	@include trailer; // keeps the rhythm correct with post images
 	@include clearfix;
 	a { // this definition keeps the nav button-like
 		display: block;
 		width: 100%;
 	}
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		li {
+	li {
+		float: left;
+		position: relative;
+		&:hover > ul.sub-menu { // shows and hides the submenus on hover
+			display: block;
+		}
+		/** SUB MENU STYLES **/
+		.sub-menu {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: none;
 			float: left;
-			position: relative;
-			&:hover > ul.children { // shows and hides the submenus on hover
-				display: block;
+			position: absolute;
+			z-index: 9999;
+			// width of the sub-menus, should probably be static
+			$sub-menu-width: 100%;
+			a {
+				width: $sub-menu-width;
 			}
-			/** SUB MENU STYLES **/
-			ul {
-				display: none;
-				float: left;
-				position: absolute;
-				left: 0;
-				top: 1.5em;
-				z-index: 9999;
-				// width of the sub-menus, should probably be static
-				$sub-menu-width: 100%;
-				a {
-					width: $sub-menu-width;
-				}
-				ul { // all further sub-menus will float $sub-menu-width
-					width: $sub-menu-width;
-					left: $sub-menu-width;
-					top: 0;
-					left: 100%;
-				}
+			ul { // all further sub-menus will float $sub-menu-width
+				width: $sub-menu-width;
+				left: $sub-menu-width;
+				top: 0;
+				left: 100%;
 			}
 		}
 	}
