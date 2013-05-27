@@ -81,6 +81,3 @@ kbd {
   font-family: "Source Code Pro", $monospace;
   font-size: 0.85em; // monospace fonts almost always must be adjusted down
 }
-
-// we need a little breathing room in the articles
-.blog article { @include trailer(3); }

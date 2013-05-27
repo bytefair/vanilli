@@ -1,0 +1,9 @@
+/*
+Layout controls a lot of small issues with site layout generally but does not
+control grid or responsive things. That happens in the optional CSS sections.
+Think vertical spacing issues mostly.
+ */
+
+// we need a little breathing room in the articles
+.blog article { @include trailer(3); }
+
