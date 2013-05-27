@@ -54,6 +54,7 @@ function v_define_site_navigation() {
   wp_nav_menu( array(
     'theme_location'  => 'main-menu',
     'container'       => 'nav',
+    'container_class' => 'site-navigation',
     'menu'            => __( 'Main navigation menu', 'vanilli' ),
     'fallback_cb'     => 'v_default_site_navigation'
   ) );

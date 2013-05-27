@@ -30,10 +30,8 @@
 					<h2 class="site-description"><?php
 						bloginfo( 'description' ); ?>
 					</h2>
-					<nav role="navigation" class="site-nav"><?php
-						do_action( 'v_site_navigation' ); ?>
-					</nav>
-				</div>
+				</div><?php
+				do_action( 'v_site_navigation' ); ?>
 			</header>
 
 			<div class="site-main" role="main">
