@@ -1,8 +1,8 @@
 .menu {
 	width: 100%;
+	@include trailer; // keeps the rhythm correct with post images
 	@include clearfix;
-	// this definition keeps the nav button-like
-	a {
+	a { // this definition keeps the nav button-like
 		display: block;
 		width: 100%;
 	}
@@ -13,8 +13,7 @@
 		li {
 			float: left;
 			position: relative;
-			// shows and hides the submenus on hover
-			&:hover > ul.children {
+			&:hover > ul.children { // shows and hides the submenus on hover
 				display: block;
 			}
 			/** SUB MENU STYLES **/
@@ -25,7 +24,7 @@
 				left: 0;
 				top: 1.5em;
 				z-index: 9999;
-				// width of the sub-menus
+				// width of the sub-menus, should probably be static
 				$sub-menu-width: 100%;
 				a {
 					width: $sub-menu-width;

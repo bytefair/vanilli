@@ -14,11 +14,6 @@
 
 ## TODO
 
-### to reach 0.2.0
-
-1. customize search form
-2. 3 column gallery
-
 ### later
 
 5. related posts plugin
