@@ -11,6 +11,6 @@ get_header(); ?>
   	the_post();
   	get_template_part( 'content', 'page' );
   } ?>
-  </div><?php
+</div><?php
 get_sidebar();
 get_footer(); ?>
