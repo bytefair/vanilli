@@ -1,0 +1,18 @@
+// you can define your needed breakpoints here
+$desktop: new-breakpoint(min-width 768px 12);
+
+.site-wrapper { @include outer-container; }
+
+// use @include media statements to target breakpoints
+@include media($desktop) {
+  .site-content { @include span-columns(9); }
+
+  .sidebar { @include span-columns(3); }
+
+  .site-footer,
+  .site-header,
+  .site-navigation {
+    @include span-columns(12);
+    @include clearfix;
+  }
+}

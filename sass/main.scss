@@ -16,7 +16,6 @@
 
 // skeleton CSS - good for custom site builders
 @import "skeleton/typography";
-@import "skeleton/layout";
 
 // required editor styles for WP, don't forget them
 @import "skeleton/wp-required";
@@ -35,6 +34,13 @@
 
 // optional CSS - good for themers or if you need more build assistance - these
 // are more opinionated styles, if you want skeleton CSS, simply delete these
+
+// layout fixes before establishing grid
+@import "optional/layout";
+
+// Bourbon Neat grid definitions
+@import "optional/grid";
+
 // @import "optional/color";
 
 // sample themes to show you what you can do with only CSS code
