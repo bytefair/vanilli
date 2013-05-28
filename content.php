@@ -25,7 +25,18 @@
 	</div>
 
 	<footer><?php
-		the_tags(); ?>
+		the_tags();
+		if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+			<div class="comments-notify">Comments:&nbsp;
+				<span class="comments-link"><?php
+					comments_popup_link(
+						__( 'Leave a comment', 'vanilli' ),
+						__( '1 Comment', 'vanilli' ),
+						__( '% Comments', 'vanilli' )
+					); ?>
+				</span>
+			</div><?php
+		endif; ?>
 	</footer>
 
 </article>
