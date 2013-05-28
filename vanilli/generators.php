@@ -22,7 +22,7 @@ function v_site_meta() {
 	// for more esoteric mobile browsers
 	$v_meta .= '<meta name="HandheldFriendly" content="True">';
 	$v_meta .= '<meta name="MobileOptimized" content="320">';
-	$v_meta .= '<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Source+Code+Pro:400,700" rel="stylesheet">';
+	// $v_meta .= '<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Source+Code+Pro:400,700" rel="stylesheet">';
 	// Metro tile, favicon, and Apple icons go here
 
 	return $v_meta;
@@ -113,7 +113,7 @@ function v_page_navi($before = '', $after = '') {
 	if($start_page <= 0) {
 		$start_page = 1;
 	}
-	echo $before.'<nav class="page-navigation"><ol class="page_navi">'."";
+	echo $before.'<nav class="page-navigation"><ol class="page-navi">'."";
 	if ($start_page >= 2 && $pages_to_show < $max_page) {
 		$first_page_text = __( "First", 'vanilli' );
 		echo '<li class="bpn-first-page-link"><a href="'.get_pagenum_link().'" title="'.$first_page_text.'">'.$first_page_text.'</a></li>';
