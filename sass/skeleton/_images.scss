@@ -6,7 +6,7 @@ img {
 }
 
 // this keeps featured images responsive
-.wp-post-image {
+article:first-child .wp-post-image {
 	@include leader(1.5);
 	max-width: 100%;
 	height: auto;
