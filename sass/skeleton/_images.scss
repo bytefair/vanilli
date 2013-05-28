@@ -1,4 +1,9 @@
-img { @include image-rendering; }
+// improves rendering and makes all images generally responsive
+img {
+	@include image-rendering;
+	max-width: 100%;
+	height: auto;
+}
 
 // this keeps featured images responsive
 .wp-post-image {
