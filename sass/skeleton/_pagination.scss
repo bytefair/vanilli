@@ -1,0 +1,22 @@
+.page-navigation {
+	@include clearfix;
+	margin: 0 auto;
+}
+
+.page-navi {
+	list-style-type: none;
+	padding-left: 0;
+	text-align: center;
+	max-width: 550px;
+	margin: 0 auto;
+	li {
+		display: inline;
+		float: left;
+		@include trailer;
+		width: 50px;
+	}
+	a {
+		width: 100%;
+		display: inline-block;
+	}
+}
