@@ -126,8 +126,8 @@ if ( comments_open() ) : ?>
 					comment_id_fields(); ?>
 				</p>
 
-				<div class="alert alert-info">
-					<p class="small allowed-tags">
+				<div class="alert alert-help">
+					<p class="allowed-tags">
 						<strong>XHTML:</strong> <?php _e('You can use these tags', 'vanilli'); ?>: <code><?php echo allowed_tags(); ?></code>
 					</p>
 				</div><?php

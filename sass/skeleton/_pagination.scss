@@ -1,3 +1,9 @@
+/*
+conrols the Bones pagination item. This is something you're going to have to
+work on for your site as the code, like the menu, is very dependent on how many
+items are in the list
+ */
+
 .page-navigation {
 	@include clearfix;
 	margin: 0 auto;
@@ -7,6 +13,7 @@
 	list-style-type: none;
 	padding-left: 0;
 	text-align: center;
+	min-width: 50px;
 	max-width: 550px;
 	margin: 0 auto;
 	li {
