@@ -38,7 +38,7 @@
 
 ## How to Build a Theme with Vanilli
 
-1. Install Bower dependencies.
+1. Install Bower dependencies. `bower install`, dude.
 2. Set up your theme options. Loading order is pretty clear in functions.php.
 Things listed as optional are optional and can be entirely removed whereas
 functionality listed as required will break the theme if removed.
@@ -47,11 +47,15 @@ downloaded at http://codex.wordpress.org/Theme_Unit_Test. Tons of details
 regarding theme testing can be found here. You should use the imported posts
 as a sample blog to make sure you don't miss any important cases.
 4. Once theme functionality is set, you will probably want to address the CSS
-stack. Start with sass/main.scss to see how code is loaded. If you're doing a
+stack. Start with `sass/main.scss` to see how code is loaded. If you're doing a
 totally custom site, you probably want to delete the optional CSS. Skeleton CSS
 provides a wonderful coherent framework to operate with and only requires a few
-variable adjustments to make it exactly how you want it. I will document the
+variable adjustments to make it exactly how you want it. Optional CSS gives more
+support to themers and more annoyances to custom builders. I will document the
 code inside the relevant files, so be sure to look through them.
+5. Sass should be compiled to `css/`. `sass/main.scss` is structured to load
+all CSS code into itself and WordPress looks for that compiled CSS in
+`css/main.css`.
 
 ## Managing Stylesheets in Vanilli
 
@@ -77,7 +81,7 @@ Tabs, not spaces. Set your own width, I don't care. I personally use 2 space tab
 characters for indentation. Please stick with this if you contribute. When
 practical, you should manually wrap your lines at 80 characters. Obviously don't
 break up HTML elements to do this, but try to manually wrap comments and doc
-blocks.
+blocks. Split things up onto new lines if you have to.
 
 You may notice that I use a somewhat unconvential coding style for WordPress
 usage. Instead of putting template tags on their own line, I place the PHP open
