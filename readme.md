@@ -17,7 +17,6 @@
 ### before 0.3.0
 
 1. style all pagination
-2. style comments
 
 ### later
 

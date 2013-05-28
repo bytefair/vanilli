@@ -1,10 +1,5 @@
 button,
 input[type="submit"] {
 	@include appearance(none);
-	@include button(shiny, lightgray);
-}
-
-#{$all-text-inputs} {
-	@include appearance(none);
-	border: 1px solid lightgray;
+	@include button(lightgray);
 }

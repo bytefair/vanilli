@@ -93,31 +93,31 @@ if ( comments_open() ) : ?>
 
 					<p class="comments-logged-in-as"><?php _e("Logged in as", "vanilli"); ?> <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php _e("Log out of this account", "vanilli"); ?>"><?php _e("Log out", "vanilli"); ?> <?php _e("&raquo;", "vanilli"); ?></a></p><?php
 
-				else : ?>
+				else : // this happens if user is NOT logged in ?>
 
 					<ul class="clearfix">
 
 						<li>
 							<label for="author"><?php _e("Name", "vanilli"); ?> <?php if ($req) _e("(required)"); ?></label>
-							<input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" placeholder="<?php _e('Your Name*', 'vanilli'); ?>" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
+							<input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
 						</li>
 
 						<li>
 							<label for="email"><?php _e("Mail", "vanilli"); ?> <?php if ($req) _e("(required)"); ?></label>
-							<input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" placeholder="<?php _e('Your E-Mail*', 'vanilli'); ?>" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
+							<input type="email" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> />
 							<small><?php _e("(will not be published)", "vanilli"); ?></small>
 						</li>
 
 						<li>
 							<label for="url"><?php _e("Website", "vanilli"); ?></label>
-							<input type="url" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" placeholder="<?php _e('Got a website?', 'vanilli'); ?>" tabindex="3" />
+							<input type="url" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" tabindex="3" />
 						</li>
 
 					</ul><?php
 				endif; //end user is logged in ?>
 
 				<p>
-					<textarea name="comment" id="comment" placeholder="<?php _e('Your Comment here...', 'vanilli'); ?>" tabindex="4">
+					<textarea name="comment" id="comment" tabindex="4">
 					</textarea>
 				</p>
 
