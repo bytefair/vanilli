@@ -14,7 +14,7 @@ Obviously if it's marked "required" reverse applies.
 **** CONSTANTS ****
 ******************/
 // Define your constants here, version should be the number of your theme.
-define('VERSION', '0.2.0'); // used for versioning of CSS for theme
+define('VERSION', '0.3.0'); // used for versioning of CSS for theme
 define('THEME_URL', get_stylesheet_directory_uri());
 
 /*****************
