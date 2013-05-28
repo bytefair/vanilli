@@ -1,0 +1,15 @@
+.commentlist {
+	list-style-type: none;
+	padding-left: 0;
+	.thread-even {
+		border: 1px solid gray;
+	}
+}
+
+.commentlist ul {
+	list-style-type: none;
+}
+
+.comment {
+	padding: 0.5em;
+}
