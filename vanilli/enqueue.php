@@ -19,6 +19,14 @@ function v_site_enqueues() {
 		array(),
 		'2.6.2',
 		false );
+	// This file calls all the JS used in Vanilli. You can place JS here or any
+	// place you want to register, really.
+	wp_register_script(
+		'vanilli-scripts',
+		THEME_URL . '/javascript/vanilli-scripts.js',
+		array('jquery'),
+		VERSION,
+		true );
 
 	/*** QUEUE ***/
 
@@ -33,7 +41,8 @@ function v_site_enqueues() {
 	// Use a plugin to load from CDN if you want, make sure it loads in
 	// noConflict mode for compatibility. Probably better to just use native
 	// if you can afford the bandwidth.
-	// wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'vanilli-scripts' );
 }
 
 ?>

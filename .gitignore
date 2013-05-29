@@ -3,3 +3,4 @@ codekit-config.json
 components/*
 .sass-cache
 css/*
+javascript/*
