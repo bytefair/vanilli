@@ -1,5 +1,9 @@
-/* =WordPress Core
--------------------------------------------------------------- */
+/*
+WordPress Core styles are here. These are things required by WP because they
+controls styles of the WYSIWYG editor. If you don't define these, users will not
+be able to use the editor adequately. These styles are very basic, but if you'd
+only like to adjust padding, you can do so by adjusting the $wp-core variables.
+ */
 $wp-core-left-margin: 5px 20px 20px 0;
 $wp-core-right-margin: 5px 0 20px 20px;
 $wp-core-center-margin: 5px auto 5px auto;

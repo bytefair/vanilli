@@ -13,8 +13,9 @@
 	????? Where da stylez yo ?????
 	??????????????????????????????
 
-	Styles are not in here because I'm compiling the styles from Sass. If you want
-	to then compress the sheets, it's imcompatible. We make it easier by calling
-	our default CSS from elsewhere, css/main.css
+	Styles are not in here because I'm compiling the styles from Sass. I want to
+	include style.css but ignore the compiled styles, so they must go into a
+	subdirectory I can ignore the whole of or the whole thing becomes name
+	dependent. I don't like that. This is not Rails, name shit whatever you want.
 
 */
