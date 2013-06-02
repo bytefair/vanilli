@@ -12,10 +12,8 @@
 			</footer>
 		</div><!-- /.site-wrapper -->
 		<?php do_action( 'v_post_site_wrapper' ); ?>
+		<!-- code functions -->
+		<?php wp_footer(); ?>
+		<!-- /code functions -->
 	</body>
-
-	<!-- code functions -->
-	<?php wp_footer(); ?>
-	<!-- /code functions -->
-
 </html>
