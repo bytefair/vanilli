@@ -14,9 +14,6 @@
 				get_the_time( get_option( 'date_format' ) ),
 				v_get_the_author_posts_link() ); ?>
 		</p>
-		<p class="post-category"><?php
-			printf(__( 'Filed under: %1$s', 'vanilli' ), get_the_category_list( ', ' )); ?>
-		</p>
 	</header>
 
 	<div class="entry-content"><?php
@@ -24,8 +21,13 @@
 		wp_link_pages(); ?>
 	</div>
 
-	<footer><?php
-		the_tags(); ?>
+	<footer>
+		<div class="post-category"><?php
+			printf(__( 'Filed under: %1$s', 'mens' ), get_the_category_list( ', ' )); ?>
+		</div>
+		<div class="post-tags"><?php
+			the_tags(); ?>
+		</div>
 	</footer><?php
 
 	comments_template(); ?>

@@ -24,8 +24,13 @@
 		wp_link_pages(); ?>
 	</div>
 
-	<footer><?php
-		the_tags();
+	<footer>
+		<div class="post-category"><?php
+			printf(__( 'Filed under: %1$s', 'mens' ), get_the_category_list( ', ' )); ?>
+		</div>
+		<div class="post-tags"><?php
+			the_tags(); ?>
+		</div><?php
 		if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 			<div class="comments-notify">Comments:&nbsp;
 				<span class="comments-link"><?php
