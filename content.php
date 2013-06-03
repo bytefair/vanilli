@@ -26,7 +26,7 @@
 
 	<footer>
 		<div class="post-category"><?php
-			printf(__( 'Filed under: %1$s', 'mens' ), get_the_category_list( ', ' )); ?>
+			printf(__( 'Filed under: %1$s', 'vanilli' ), get_the_category_list( ', ' )); ?>
 		</div>
 		<div class="post-tags"><?php
 			the_tags(); ?>
