@@ -17,9 +17,12 @@
 ### before 0.3.0
 
 1. style all pagination - scaffold is in place but it's very shaky
+2. bad padding on non-blog articles
+3. header of archive outside of site-content div
 
 ### later
 
+4. possible author template
 5. related posts plugin
 6. easy shortcode creation
 7. stilts for custom types? not sure about this...
