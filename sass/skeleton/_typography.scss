@@ -71,13 +71,3 @@ h3 { @include font-scale-multiple(2)    }
 h4 { @include font-scale-multiple(1)    }
 h5 { @include font-scale-multiple(0)    }
 h6 { @include font-scale-multiple(-1)   }
-
-// // Google Fonts Code activation code in v_site_meta(). Let's face it, Helvetica
-// // is worn out as a default.
-// html { font-family: "Source Sans Pro", $helvetica; }
-// pre,
-// code,
-// kbd {
-//   font-family: "Source Code Pro", $monospace;
-//   font-size: 0.85em; // monospace fonts almost always must be adjusted down
-// }

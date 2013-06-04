@@ -22,7 +22,6 @@ function v_site_meta() {
 	// for more esoteric mobile browsers
 	$v_meta .= '<meta name="HandheldFriendly" content="True">';
 	$v_meta .= '<meta name="MobileOptimized" content="320">';
-	// $v_meta .= '<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Source+Code+Pro:400,700" rel="stylesheet">';
 	// Metro tile, favicon, and Apple icons go here
 
 	return $v_meta;
