@@ -2,23 +2,21 @@
 
 ## Uses
 
-* WordPress
-* HTML5 Boilerplate
-* Bones
-* Normalize.css
-* _s
-* Modernizr
-* Bower
-* Bourbon & Neat
-* Sass
+* [WordPress][http://wordpress.org]
+* [HTML5 Boilerplate][http://html5boilerplate.com]
+* [Bones][http://themble.com/bones]
+* [Normalize.css][http://necolas.github.io/normalize.css]
+* [_s][http://underscores.me/]
+* [Modernizr][http://modernizr.com]
+* [Bower][http://bower.io]
+* [Bourbon][http://bourbon.io] & [Neat][http://neat.bourbon.io]
+* [Sass][http://sass-lang.com]
 
 ## TODO
 
 ### before 0.3.0
 
 1. style all pagination - scaffold is in place but it's very shaky
-2. bad padding on non-blog articles
-3. header of archive outside of site-content div
 
 ### later
 
