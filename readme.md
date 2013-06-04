@@ -14,17 +14,18 @@
 
 ## TODO
 
-### before 0.3.0
+### before 0.4.0
 
 1. style all pagination - scaffold is in place but it's very shaky
+2. some structure to author page bio
+3. call for prism
 
 ### later
 
-4. possible author template
-5. related posts plugin
-6. easy shortcode creation
-7. stilts for custom types? not sure about this...
-8. create a cakefile to automatically build site, then rename normalize, etc
+1. related posts plugin?
+2. easy shortcode creation
+3. stilts for custom types? not sure about this...
+4. create a cakefile to automatically build site, then rename normalize, etc
 
 ## ROADMAP
 
@@ -38,7 +39,10 @@
 
 ## How to Build a Theme with Vanilli
 
-1. Install Bower dependencies. `bower install`, dude.
+1. Take care of your Bower dependencies. I leave them at latest for development
+but I almost always lock the version numbers when it goes into production. You
+don't want to introduce bugs without being able to track where you introduced
+them.
 2. Set up your theme options. Loading order is pretty clear in functions.php.
 Things listed as optional are optional and can be entirely removed whereas
 functionality listed as required will break the theme if removed.
@@ -50,9 +54,9 @@ as a sample blog to make sure you don't miss any important cases.
 stack. Start with `sass/main.scss` to see how code is loaded. If you're doing a
 totally custom site, you probably want to delete the optional CSS. Skeleton CSS
 provides a wonderful coherent framework to operate with and only requires a few
-variable adjustments to make it exactly how you want it. Optional CSS gives more
-support to themers and more annoyances to custom builders. I will document the
-code inside the relevant files, so be sure to look through them.
+variable adjustments to make it exactly how you want it. Optional CSS is
+opinionated. Below this is a user block where I recommend you define any more
+specific Sass. I may provide some examples at some point in the future.
 5. Sass should be compiled to `css/`. `sass/main.scss` is structured to load
 all CSS code into itself and WordPress looks for that compiled CSS in
 `css/main.css`.

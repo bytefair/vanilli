@@ -1,6 +1,6 @@
 {
 	"name": "vanilli",
-	"version": "0.0.0",
+	"version": "0.4.0pre",
 	"ignore": [
 		"**/.*",
 		"node_modules",
@@ -10,6 +10,7 @@
 		"modernizr": "latest",
 		"normalize-css": "latest",
 		"bourbon": "latest",
-		"neat": "latest"
+		"neat": "latest",
+		"prism": "latest"
 	}
 }
