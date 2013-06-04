@@ -6,21 +6,17 @@ items are in the list
 
 .page-navigation {
 	@include clearfix;
-	margin: 0 auto;
+	text-align: center;
 }
 
 .page-navi {
-	list-style-type: none;
-	padding-left: 0;
+	display: inline-block;
 	text-align: center;
-	min-width: 50px;
-	max-width: 550px;
-	margin: 0 auto;
-	li {
+	padding: 0;
+	& > li {
 		display: inline;
 		float: left;
-		@include trailer;
-		width: 50px;
+		padding: 10px;
 	}
 	a {
 		width: 100%;
