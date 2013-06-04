@@ -24,7 +24,7 @@ get_header(); ?>
 					the_title(); ?>
 				</a>
 			</li>
-		</ul>
+		</ul><?php
 	endwhile; ?>
 </div><?php
 get_sidebar();
