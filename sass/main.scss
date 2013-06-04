@@ -11,6 +11,13 @@
 // import vertical rhythm module from Compass
 @import "vendor/vertical-rhythm";
 
+/*************
+** OPTIONAL **
+*************/
+
+// uncomment for prism syntax highlighting http://prismjs.com
+// also uncomment the javascript in vanilli/enqueue.php
+// @import "../components/prism/prism-okaidia.css";
 
 /****************
 ** RECOMMENDED **
