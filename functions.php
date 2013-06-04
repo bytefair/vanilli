@@ -37,7 +37,7 @@ here if you don't want to make a plugin.
  */
 require_once('vanilli/admin.php');
 
-/*** 31337 H4X0R$ ONLY -- ALL LAMES COMMENT THIS OUT ***/
+/*** 31337 H4X0R$ ONLY ***/
 require_once('vanilli/vanillize.php');
 
 /*****************
@@ -60,9 +60,15 @@ require_once('vanilli/enqueue.php');
 
 /*** GENERATORS ***/
 /*
-These are functions that are called directly from templates. They usually are
-meant to return complete HTML code.
+These are functions that control complex HTML generation. They are put in here
+because they are scary and messy.
  */
 require_once('vanilli/generators.php');
+
+/*** PAGE MODULES ***/
+/*
+Page modules generate reusable module code to use in templates
+ */
+require_once('vanilli/modules.php');
 
 ?>
