@@ -3,11 +3,18 @@
 **************************************/
 
 // imports from Bower, you cannot remove these unless you remove all CSS
+// in production you should build and concatenate this anwyay
+
+// Normalize.css
 @import "../components/normalize-css/normalize.css";
+
+// Bourbon framework
 @import "../components/bourbon/app/assets/stylesheets/bourbon";
-// neat settings must be loaded first
+
+// Neat settings must be loaded first, then Bourbon Neat
 @import "helpers/neat-settings";
 @import "../components/neat/app/assets/stylesheets/neat";
+
 // import vertical rhythm module from Compass
 @import "vendor/vertical-rhythm";
 
@@ -18,6 +25,7 @@
 // uncomment for prism syntax highlighting http://prismjs.com
 // also uncomment the javascript in vanilli/enqueue.php
 // @import "../components/prism/prism-okaidia.css";
+// @import "../components/prism/prism.css"
 
 /****************
 ** RECOMMENDED **
