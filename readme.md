@@ -39,65 +39,31 @@
 
 ## How to Build a Theme with Vanilli
 
-1. Take care of your Bower dependencies. I leave them at latest for development
-but I almost always lock the version numbers when it goes into production. You
-don't want to introduce bugs without being able to track where you introduced
-them.
-2. Set up your theme options. Loading order is pretty clear in functions.php.
-Things listed as optional are optional and can be entirely removed whereas
-functionality listed as required will break the theme if removed.
-3. You probably want to install the Theme Unit Test import which can be
-downloaded at http://codex.wordpress.org/Theme_Unit_Test. Tons of details
-regarding theme testing can be found here. You should use the imported posts
-as a sample blog to make sure you don't miss any important cases.
-4. Once theme functionality is set, you will probably want to address the CSS
-stack. Start with `sass/main.scss` to see how code is loaded. If you're doing a
-totally custom site, you probably want to delete the optional CSS. Skeleton CSS
-provides a wonderful coherent framework to operate with and only requires a few
-variable adjustments to make it exactly how you want it. Optional CSS is
-opinionated. Below this is a user block where I recommend you define any more
-specific Sass. I may provide some examples at some point in the future.
-5. Sass should be compiled to `css/`. `sass/main.scss` is structured to load
-all CSS code into itself and WordPress looks for that compiled CSS in
-`css/main.css`.
+1. Take care of your Bower dependencies. I leave them at latest for development but I almost always lock the version numbers when it goes into production. You don't want to introduce bugs without being able to track where you introduced them.
+2. Set up your theme options. Loading order is pretty clear in functions.php. Things listed as optional are optional and can be entirely removed whereas functionality listed as required will break the theme if removed.
+3. You probably want to install the Theme Unit Test import which can be downloaded at http://codex.wordpress.org/Theme_Unit_Test. Tons of details regarding theme testing can be found here. You should use the imported posts as a sample blog to make sure you don't miss any important cases.
+4. Once theme functionality is set, you will probably want to address the CSS stack. Start with `sass/main.scss` to see how code is loaded. If you're doing a totally custom site, you probably want to delete the optional CSS. Skeleton CSS provides a wonderful coherent framework to operate with and only requires a few variable adjustments to make it exactly how you want it. Optional CSS is opinionated. Below this is a user block where I recommend you define any more specific Sass. I may provide some examples at some point in the future.
+5. Sass should be compiled to `css/`. `sass/main.scss` is structured to load all CSS code into itself and WordPress looks for that compiled CSS in `css/main.css`.
 
 ## Managing Stylesheets in Vanilli
 
-I have made all the styles for Vanilli in Sass, specifically SCSS so I can
-import vanilla CSS seamlessly. I personally prefer to use the Sass syntax, but
-I think it's more generally useful to include SCSS in projects to seamlessly
-integrate with any vendor CSS.
+I have made all the styles for Vanilli in Sass, specifically SCSS so I can import vanilla CSS seamlessly. I personally prefer to use the Sass syntax, but I think it's more generally useful to include SCSS in projects to seamlessly integrate with any vendor CSS.
 
 ### Can You Add Preprocessor Framework X?
 
 no
 
-I like Stylus also but don't see any advantages over Sass if you're not in Node
-or something and I honestly hate Less. Don't write me about putting Less
-versions of thesesheets because I do not care. I hate the syntax and it feels
-unnatural. SCSS, despite losing some advantages of Ruby-style Sass feels like a
-natural extension of CSS. Less's continuing popularity is absolutely baffling to
-me. I assume it's entirely related to Twitter Bootstrap. Okay, blog post over.
+I like Stylus also but don't see any advantages over Sass if you're not in Node or something and I honestly hate Less. Don't write me about putting Less versions of thesesheets because I do not care. I hate the syntax and it feels unnatural. SCSS, despite losing some advantages of Ruby-style Sass feels like a natural extension of CSS. Less's continuing popularity is absolutely baffling to me. I assume it's entirely related to Twitter Bootstrap. Okay, blog post over.
 
 ## Code Style Notes
 
-Tabs, not spaces. Set your own width, I don't care. I personally use 2 space tab
-characters for indentation. Please stick with this if you contribute. When
-practical, you should manually wrap your lines at 80 characters. Obviously don't
-break up HTML elements to do this, but try to manually wrap comments and doc
-blocks. Split things up onto new lines if you have to.
+Tabs, not spaces. Set your own width, I don't care. I personally use 2 space tab characters for indentation. Please stick with this if you contribute. IfWhen practical, you should manually wrap your lines at 80 characters. Obviously don't break up HTML elements to do this, but try to manually wrap comments and doc blocks. Split things up onto new lines if you have to.
 
-You may notice that I use a somewhat unconvential coding style for WordPress
-usage. Instead of putting template tags on their own line, I place the PHP open
-and close tags on the ends of lines. I think this makes it much more clear
-what's happening in the code when you can scan the function names looking on the
-left. PHP templates are ugly enough without having to look at a thousand opening
-tags. The only time this is not the case is when breaking up a line would create
-confusion about the HTML structure. So leave attribute generators inline, but
-break everything else onto new lines.
+You may notice that I use a somewhat unconvential coding style for WordPress usage. Instead of putting template tags on their own line, I place the PHP open and close tags on the ends of lines. I think this makes it much more clear what's happening in the code when you can scan the function names looking on the left. PHP templates are ugly enough without having to look at a thousand opening tags. The only time this is not the case is when breaking up a line would create confusion about the HTML structure. So leave attribute generators inline, but break everything else onto new lines.
 
-Complicated arrays and function calls are expanded vertically when it adds
-clarity to the code.
+I know it's weird but it's just something I'm trying to make happen okay.
+
+Complicated arrays and function calls are expanded vertically when it adds clarity to the code. I try to keep the parenthesis aligned, I guess?
 
 ### Comments
 
