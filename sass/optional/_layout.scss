@@ -16,8 +16,14 @@ Think vertical spacing issues mostly.
 
 header,
 article,
-.entry-content {
+.entry-content,
+.sidebar {
 	@include clearfix;
+}
+
+.sidebar {
+	@include leader;
+	@include trailer;
 }
 
 .site-wrapper article:last-child {
