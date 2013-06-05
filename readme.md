@@ -2,22 +2,23 @@
 
 ## Uses
 
-* [WordPress][http://wordpress.org]
-* [HTML5 Boilerplate][http://html5boilerplate.com]
-* [Bones][http://themble.com/bones]
-* [Normalize.css][http://necolas.github.io/normalize.css]
-* [_s][http://underscores.me/]
-* [Modernizr][http://modernizr.com]
-* [Bower][http://bower.io]
-* [Bourbon][http://bourbon.io] & [Neat][http://neat.bourbon.io]
-* [Sass][http://sass-lang.com]
-* [Prism.js][http://prismjs.com]
+* [WordPress](http://wordpress.org)
+* [HTML5 Boilerplate](http://html5boilerplate.com)
+* [Bones](http://themble.com/bones)
+* [Normalize.css](http://necolas.github.io/normalize.css)
+* [_s](http://underscores.me)
+* [Modernizr](http://modernizr.com)
+* [Bower](http://bower.io)
+* [Bourbon](http://bourbon.io) & [Neat](http://neat.bourbon.io)
+* [Sass](http://sass-lang.com)
+* [Prism.js](http://prismjs.com)
 
 ## TODO
 
 ### before 0.4.0
 
-1. style all pagination - scaffold is in place but it's very shaky
+1. fix search box boundaries so it doesn't flow outsite the page
+   containers
 2. some structure to author page bio
 3. change include clearfix to a placeholder extend
 
