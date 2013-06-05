@@ -80,9 +80,9 @@ function v_archive_header() {
 
 /*
 awesome pagination ripped from bones
+passing anonymous functions is PHP 5.3 and up but c'mon dude
  */
-add_action( 'v_pagination', 'v_page_navi' );
-function v_page_navi($before = '', $after = '') {
+add_action( 'v_pagination', function ($before = '', $after = '') {
 	global $wpdb, $wp_query;
 	$request = $wp_query->request;
 	$posts_per_page = intval(get_query_var('posts_per_page'));
@@ -135,7 +135,8 @@ function v_page_navi($before = '', $after = '') {
 		echo '<li class="bpn-last-page-link"><a href="'.get_pagenum_link($max_page).'" title="'.$last_page_text.'">'.$last_page_text.'</a></li>';
 	}
 	echo '</ol></nav>'.$after."";
-}
+});
+
 
 /*
 called in comments.php to format comments

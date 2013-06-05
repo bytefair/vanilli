@@ -5,8 +5,7 @@ setup.php
 Defines theme features
  */
 
-add_action( 'after_setup_theme', 'v_supports' );
-function v_supports() {
+add_action( 'after_setup_theme', function() {
   add_theme_support( 'automatic_feed_links' ); //Don't let social media kill RSS
   add_theme_support( 'post-thumbnails' );
   add_theme_support( 'custom-background' );
@@ -34,10 +33,9 @@ function v_supports() {
   $locale = get_locale();
   $locale_file = get_template_directory() . "/translation/$locale.php";
   if ( is_readable($locale_file) ) require_once($locale_file);
-}
+});
 
-add_action( 'widgets_init', 'v_register_sidebars' );
-function v_register_sidebars() {
+add_action( 'widgets_init', function() {
   register_sidebar( array(
     'id'            => 'sidebar1',
     'name'          => __( 'Main sidebar', 'vanilli' ),
@@ -47,10 +45,9 @@ function v_register_sidebars() {
     'before_title'  => '<h1 class="widget-title">',
     'after_title'   => '</h1>'
   ) );
-}
+});
 
-add_action( 'v_site_navigation', 'v_define_site_navigation' );
-function v_define_site_navigation() {
+add_action( 'v_site_navigation', function() {
   wp_nav_menu( array(
     'theme_location'  => 'main-menu',
     'container'       => 'nav',
@@ -58,8 +55,10 @@ function v_define_site_navigation() {
     'menu'            => __( 'Main navigation menu', 'vanilli' ),
     'fallback_cb'     => 'v_default_site_navigation'
   ) );
-}
+});
 
-function v_default_site_navigation() {
-  // do whatever you want here
-}
+// this is your fallback if you want a custom coded menu. If you want the
+// default to be no menu, just leave this alone.
+function v_default_site_navigation() {}
+
+?>

@@ -38,12 +38,10 @@ Ooh, ooh, ooh I love you";
 	return wptexturize( $doperhymes[ mt_rand( 0, count ( $doperhymes ) -1 ) ] );
 }
 
-function v_girl() {
+// I don't get this at all
+add_filter('admin_footer_text', function () {
 	$incendiary_political_lyric = v_anilli_lyrix();
 	echo '<a href="http://www.youtube.com/watch?v=t0qTOkUPlGk">' . $incendiary_political_lyric . '</a>';
-}
-
-// I don't get this at all
-add_filter('admin_footer_text', 'v_girl');
+});
 
 ?>

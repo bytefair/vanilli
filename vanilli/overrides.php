@@ -5,8 +5,7 @@ core.php
 Contains overrides and changes to WP's defaults
  */
 
-add_action( 'after_setup_theme', 'v_core_fixes', 15 );
-function v_core_fixes() {
+add_action( 'after_setup_theme', function() {
 	// debullshitification
 	remove_action( 'wp_head', 'wlwmanifest_link' ); // Windows Live Writer
 	remove_action( 'wp_head', 'rsd_link' ); // Really Simple Discovery
@@ -26,7 +25,7 @@ function v_core_fixes() {
 	add_filter( 'wp_head', 'v_remove_wp_widget_recent_comments_style', 1 );
 	add_action( 'wp_head', 'v_remove_recent_comments_style', 1 );
 	add_filter( 'gallery_style', 'v_gallery_style' );
-}
+}, 15); // last bit is priority
 
 // all these functions come from bones, thx bro
 function v_strip_version( $src ) {
