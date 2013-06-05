@@ -14,6 +14,12 @@ Think vertical spacing issues mostly.
 	}
 }
 
+header,
+article,
+.entry-content {
+	@include clearfix;
+}
+
 .site-wrapper article:last-child {
 	margin-bottom: 0;
 }
