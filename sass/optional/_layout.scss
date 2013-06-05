@@ -4,8 +4,18 @@ control grid or responsive things. That happens in the optional CSS sections.
 Think vertical spacing issues mostly.
  */
 
-// we need a little breathing room in the articles
-.blog article,
-.archive article { @include trailer(3); }
+// make sure all headers and footers in content area fall in typographic
+// rhythm
+.site-content {
+	footer,
+	header {
+		@include leader;
+		@include trailer;
+	}
+}
+
+.site-wrapper article:last-child {
+	margin-bottom: 0;
+}
 
 .site-wrapper { padding: 0 2%; }
