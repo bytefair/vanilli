@@ -24,7 +24,7 @@
 
 // have color schemes or other things you want to define for reuse? I recommend
 // you do it here
-@include "variables";
+@import "variables";
 
 // uncomment for prism syntax highlighting http://prismjs.com
 // also uncomment the javascript in vanilli/enqueue.php
