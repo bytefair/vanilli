@@ -22,6 +22,10 @@
 ** OPTIONAL **
 *************/
 
+// have color schemes or other things you want to define for reuse? I recommend
+// you do it here
+@include "variables";
+
 // uncomment for prism syntax highlighting http://prismjs.com
 // also uncomment the javascript in vanilli/enqueue.php
 // @import "../components/prism/prism-okaidia.css";
