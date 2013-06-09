@@ -73,7 +73,8 @@ h5 { @include font-scale-multiple(0)    }
 h6 { @include font-scale-multiple(-1)   }
 
 // you don't want straight black
-body { color: #444; }
+body {
+	color: #444;
+	font-family: serif;
+}
 h1, h2, h3, h4, h5, h6 { color: #222; }
-
-
