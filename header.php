@@ -26,10 +26,12 @@
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php
 							bloginfo( 'name' ); ?>
 						</a>
-					</h1>
-					<h2 class="site-description"><?php
-						bloginfo( 'description' ); ?>
-					</h2>
+					</h1><?php
+					if ( bloginfo( 'description' ) ) : ?>
+						<h2 class="site-description"><?php
+							bloginfo( 'description' ); ?>
+						</h2><?php
+					endif; ?>
 				</div><?php
 				do_action( 'v_site_navigation' ); ?>
 			</header>
