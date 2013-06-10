@@ -11,7 +11,6 @@
 * [Bower](http://bower.io)
 * [Bourbon](http://bourbon.io) & [Neat](http://neat.bourbon.io)
 * [Sass](http://sass-lang.com)
-* [Prism.js](http://prismjs.com)
 
 ## TODO
 

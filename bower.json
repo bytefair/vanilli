@@ -10,7 +10,6 @@
 		"modernizr": "latest",
 		"normalize-css": "latest",
 		"bourbon": "latest",
-		"neat": "latest",
-		"prism": "latest"
+		"neat": "latest"
 	}
 }
