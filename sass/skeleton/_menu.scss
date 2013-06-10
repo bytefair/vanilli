@@ -11,6 +11,7 @@
 	li {
 		float: left;
 		position: relative;
+		margin-right: 1em;
 		&:hover > ul.sub-menu { // shows and hides the submenus on hover
 			display: block;
 		}
