@@ -37,8 +37,16 @@ here if you don't want to make a plugin.
  */
 require_once('vanilli/admin.php');
 
+/*** SHORTCODES ***/
+/*
+Contains the default shortcode for Prism.js code blocks. You should place your
+own shortcodes here as well.
+ */
+require_once('vanilli/shortcodes.php');
+
 /*** 31337 H4X0R$ ONLY ***/
 require_once('vanilli/vanillize.php');
+
 
 /*****************
 **** REQUIRED ****
