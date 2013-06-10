@@ -56,10 +56,7 @@ if ( have_comments() ) : ?>
 	endif;
 else:
 	if ( comments_open() ) : // comments are open, but there are no comments
-	else : // comments are closed ?>
-		<p class="nocomments"><?php
-			_e("Comments are closed.", "vanilli"); ?>
-		</p><?php
+	else : // comments are closed
 	endif;
 endif; // end have_comments();
 
