@@ -29,12 +29,12 @@ function v_site_enqueues() {
 		true );
 	// Prism.js syntax highlighting, it's awesome
 	// http://prismjs.com
-	// wp_register_script(
-	// 	'prismjs',
-	// 	THEME_URL . '/components/prism/prism.js',
-	// 	array(),
-	// 	VERSION,
-	// 	true );
+	wp_register_script(
+		'prismjs',
+		THEME_URL . '/components/prism/prism.js',
+		array(),
+		VERSION,
+		true );
 
 	/*** QUEUE ***/
 
@@ -51,6 +51,7 @@ function v_site_enqueues() {
 	// if you can afford the bandwidth.
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'vanilli-scripts' );
+	wp_enqueue_script( 'prismjs' );
 }
 
 ?>
