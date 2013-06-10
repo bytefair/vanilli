@@ -11,6 +11,6 @@
 		wp_link_pages(); ?>
 	</div><?php
 
-	comments_template(); ?>
+	// comments_template(); ?>
 
 </article>
