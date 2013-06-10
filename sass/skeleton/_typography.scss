@@ -78,3 +78,9 @@ body {
 	font-family: serif;
 }
 h1, h2, h3, h4, h5, h6 { color: #222; }
+
+// hanging lists
+ol,
+ul {
+	padding-left: 0;
+}

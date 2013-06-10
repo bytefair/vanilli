@@ -6,28 +6,25 @@ Think vertical spacing issues mostly.
 
 // make sure all headers and footers in content area fall in typographic
 // rhythm
-.site-content {
-	footer,
-	header {
-		@include leader;
-		@include trailer;
-	}
-}
 
 header,
+footer,
 article,
 .entry-content,
 .sidebar {
 	@include clearfix;
 }
 
-.sidebar {
+.site-header,
+.site-footer {
 	@include leader;
 	@include trailer;
 }
 
-.site-wrapper article:last-child {
-	margin-bottom: 0;
+.sidebar {
+	li { list-style-type: none; }
+	h1 { @include font-scale-multiple(1); }
+	h2 { @include font-scale-multiple(2); }
 }
 
-.site-wrapper { padding: 0 2%; }
+.site-wrapper { padding: 0 2em; }
