@@ -16,7 +16,6 @@
 
 ### pre 0.5.0
 
-1. study WAI-ARIA spec and make sure
 
 ### later
 
@@ -27,7 +26,7 @@
 
 ## TENTATIVE ROADMAP
 
-* 0.5.0 - WAI-ARIA, more custom functionality? examine all code structure - would like to create a metabox so you can select full width, sidebar
+* 0.5.0 - WAI-ARIA checks, more custom functionality? examine all code structure - would like to create a metabox so you can select full width, sidebar
 * 0.6.0 - Theme cleanup, favicons, etc
 * 0.7.0 - Inclusion of a pretty sample theme
 * 0.8.0 - ?
