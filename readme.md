@@ -14,14 +14,6 @@
 
 ## TODO
 
-### before 0.4.0
-
-1. fix search box boundaries so it doesn't flow outsite the page
-   containers
-2. some structure to author page bio
-4. repair 404's structure where it has content inside correct divs so it floats correctly
-5. probably should set .container widths on header and footer wrappers
-
 ### later
 
 1. related posts plugin?
@@ -31,10 +23,6 @@
 
 ## ROADMAP
 
-* 0.1.0 - Basic page structure works, no CSS, code imported
-* 0.2.0 - Skeleton CSS
-* 0.3.0 - Fancy CSS
-* 0.4.0 - JS systems and plugins
 * 0.5.0 - Custom functionality and plugins?
 * 0.6.0 - Theme cleanup, favicons, etc
 * 1.0.0 - release

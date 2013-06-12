@@ -11,12 +11,14 @@ header,
 footer,
 article,
 .entry-content,
-.sidebar {
+.sidebar,
+.site-header-wrap,
+.site-footer-wrap {
 	@extend %clearfix;
 }
 
-.site-header,
-.site-footer {
+.site-header-wrap,
+.site-footer-wrap {
 	@include leader;
 	@include trailer;
 }

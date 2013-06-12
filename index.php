@@ -15,10 +15,12 @@ get_header(); ?>
 			the_post();
 			get_template_part( 'content', get_post_format() );
 		endwhile;
-
 		do_action( 'v_pagination' );
 
-	else get_template_part( 'no-results', 'index' );
+	else:
+
+		get_template_part( 'no-results', 'index' );
+
 	endif; ?>
 
 </div><?php

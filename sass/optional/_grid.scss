@@ -9,10 +9,9 @@ $desktop: new-breakpoint(min-width 768px 12);
 
   .sidebar { @include span-columns(3); }
 
-  .site-footer,
-  .site-header,
+  .site-footer-wrap,
+  .site-header-wrap,
   .site-navigation {
     @include span-columns(12);
-    @extend %clearfix;
   }
 }
