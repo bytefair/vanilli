@@ -8,7 +8,7 @@ get_header(); ?>
 
 <div class="site-content"><?php
 
-	echo v_archive_header();
+	echo v_get_the_archive_header();
 
 	if ( have_posts() ) :
 

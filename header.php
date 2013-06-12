@@ -11,7 +11,7 @@
 
 		<!-- this action runs the hook that creates all the meta, be sure to
 		 look it over before you deploy and make sure these are desired --><?php
-		echo v_site_meta(); ?>
+		echo v_get_the_site_meta(); ?>
 
 		<!-- code functions --><?php
 		wp_head(); ?>

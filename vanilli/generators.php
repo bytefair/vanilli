@@ -12,7 +12,7 @@ how your daddy taught you how to do it ten years ago but that's suckfest coding.
 This function simply concatenates meta tags to a variable for printing. You can
 add additional tags by concatenating your own head tags.
  */
-function v_site_meta() {
+function v_get_the_site_meta() {
 	// pingback
 	$v_meta  = '<link rel="pingback" href="' . get_bloginfo( "pingback_url" ) . '">';
 	// Chome Frame it if you got it
@@ -51,7 +51,7 @@ function v_get_the_author_posts_link() {
 /*
 Handles the somewhat complicated header code for archive.php
  */
-function v_archive_header() {
+function v_get_the_archive_header() {
 	$archive_header = '<header class="archive-header"><h1 class="archive-title">';
 	if(is_category()) {
 		$archive_header .= __( 'Posts categorized ', 'vanilli' );
@@ -143,7 +143,7 @@ called in comments.php to format comments
 
 taken from bones
  */
-function v_comments($comment, $args, $depth) {
+function v_list_comments($comment, $args, $depth) {
 	$GLOBALS['comment'] = $comment; ?>
 	<li <?php comment_class(); ?>>
 		<article id="comment-<?php comment_ID(); ?>">

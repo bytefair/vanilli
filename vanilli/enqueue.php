@@ -38,9 +38,6 @@ function v_site_enqueues() {
 		VERSION,
 		'all' );
 	wp_enqueue_script( 'modernizr' );
-	// Use a plugin to load from CDN if you want, make sure it loads in
-	// noConflict mode for compatibility. Probably better to just use native
-	// if you can afford the bandwidth.
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'vanilli-scripts' );
 }

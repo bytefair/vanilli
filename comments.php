@@ -41,7 +41,7 @@ if ( have_comments() ) : ?>
 		</nav><?php
 	endif; ?>
 	<ol class="commentlist">
-		<?php wp_list_comments('type=comment&callback=v_comments'); ?>
+		<?php wp_list_comments('type=comment&callback=v_list_comments'); ?>
 	</ol><?php
 	if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 		<nav id="comment-nav-above" class="navigation-comment" role="navigation">
