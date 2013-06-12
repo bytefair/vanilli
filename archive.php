@@ -19,7 +19,8 @@ get_header(); ?>
 
 		do_action( 'v_pagination' );
 
-	else get_template_part( 'no-results', 'archive' );
+	else:
+		get_template_part( 'no-results', 'archive' );
 	endif; ?>
 
 </div><?php

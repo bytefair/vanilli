@@ -24,7 +24,10 @@ get_header(); ?>
 
 		do_action( 'post_loop_nav' );
 
-	else: get_template_part( 'no-results', 'search' );
+	else:
+
+		get_template_part( 'no-results', 'search' );
+
 	endif; ?>
 
 </div><?php
