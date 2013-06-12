@@ -3,7 +3,7 @@
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	@include clearfix;
+	@extend %clearfix;
 	a { // this definition keeps the nav button-like
 		display: block;
 		width: 100%;

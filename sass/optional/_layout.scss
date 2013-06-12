@@ -12,7 +12,7 @@ footer,
 article,
 .entry-content,
 .sidebar {
-	@include clearfix;
+	@extend %clearfix;
 }
 
 .site-header,

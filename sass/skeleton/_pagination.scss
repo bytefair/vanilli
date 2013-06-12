@@ -5,7 +5,7 @@ items are in the list
  */
 
 .page-navigation {
-	@include clearfix;
+	@extend %clearfix;
 	text-align: center;
 }
 
