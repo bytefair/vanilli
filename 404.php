@@ -6,7 +6,8 @@ This template is thrown on 404.
  */
 get_header(); ?>
 
-<div class="entry-content">
+<div class="site-content">
+
 	<h1><?
 		_e( '404 - Where are you trying to go?', 'mens' ); ?>
 	</h1><?php
@@ -20,4 +21,5 @@ get_header(); ?>
 </div><?php
 
 get_sidebar();
+
 get_footer(); ?>
