@@ -6,7 +6,7 @@ Controls display of archives
  */
 get_header(); ?>
 
-<div class="site-content"><?php
+<div class="site-content" role="main"><?php
 
 	echo v_get_the_archive_header();
 

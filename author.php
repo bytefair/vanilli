@@ -15,7 +15,7 @@ I'm going to put some stuff here later but for now I'll just call it for you.
  */
 get_header(); ?>
 
-<div class="site-content">
+<div class="site-content" role="main">
 
 	<h1><?php
 		the_author_meta( 'display_name' ); ?>

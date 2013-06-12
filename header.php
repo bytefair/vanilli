@@ -42,4 +42,4 @@
 				do_action( 'v_site_navigation' ); ?>
 			</header>
 
-			<div class="site-main" role="main">
+			<div class="site-main">

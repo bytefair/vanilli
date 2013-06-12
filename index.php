@@ -7,7 +7,7 @@ matches at a higher priority, this template will be called.
  */
 get_header(); ?>
 
-<div class="site-content"><?php
+<div class="site-content" role="main"><?php
 
 	if ( have_posts() ) :
 

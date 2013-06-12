@@ -6,7 +6,7 @@ This template matches any pages.
  */
 get_header(); ?>
 
-<div class="site-content"><?php
+<div class="site-content" role="main"><?php
 
 	while ( have_posts() ) :
 		the_post();

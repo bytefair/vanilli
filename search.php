@@ -6,7 +6,7 @@ This file controls search results.
  */
 get_header(); ?>
 
-<div class="site-content"><?php
+<div class="site-content" role="main"><?php
 
 	if (have_posts()) : ?>
 
