@@ -19,9 +19,6 @@
 
 ### later
 
-1. related posts plugin?
-2. easy shortcode creation
-3. stilts for custom types? not sure about this...
 4. create a cakefile to automatically build site, then rename normalize, etc
 
 ## TENTATIVE ROADMAP
