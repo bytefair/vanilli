@@ -16,6 +16,7 @@
 	</div>
 
 	<footer><?php
+
 		v_common_taxonomy();
 
 		if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
@@ -29,6 +30,7 @@
 				</span>
 			</div><?php
 		endif; ?>
+
 	</footer>
 
 </article>

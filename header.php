@@ -18,20 +18,26 @@
 		<!-- /code functions -->
 	</head>
 	<body <?php body_class(); ?>><?php
+
 		do_action( 'v_pre_site_wrapper' ); ?>
+
 		<div class="hfeed site-wrapper">
+
 			<header class="site-header" role="banner">
 				<div class="site-header-wrap">
+
 					<h1 class="site-title">
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php
 							bloginfo( 'name' ); ?>
 						</a>
 					</h1><?php
+
 					if ( bloginfo( 'description' ) ) : ?>
 						<h2 class="site-description"><?php
 							bloginfo( 'description' ); ?>
 						</h2><?php
 					endif; ?>
+
 				</div><?php
 				do_action( 'v_site_navigation' ); ?>
 			</header>

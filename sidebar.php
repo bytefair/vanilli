@@ -1,4 +1,5 @@
 <aside id="sidebar1" class="sidebar" role="complementary"><?php
+
   if ( is_active_sidebar( 'sidebar1' ) ) :
     dynamic_sidebar( 'sidebar1' );
   else : ?>
@@ -7,4 +8,5 @@
       <p>Girl, it looks like you need to either define a static sidebar in sidebar.php or you need to add some widgets.</p>
     </div><?php
   endif; ?>
+
 </aside>

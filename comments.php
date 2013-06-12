@@ -2,6 +2,8 @@
 /*
 The comments template controls comments display if provided, and I'm not a big
 fan of the way WP's default structure is.
+
+They are laregly taken from Bones.
  */
 
 // safety checks, do not remove these unless you know what you're doing

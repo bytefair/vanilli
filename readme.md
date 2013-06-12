@@ -21,6 +21,7 @@
 2. some structure to author page bio
 3. change include clearfix to a placeholder extend
 4. repair 404's structure where it has content inside correct divs so it floats correctly
+5. rename functions to the_ and get_
 
 ### later
 

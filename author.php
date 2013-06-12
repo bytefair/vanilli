@@ -14,9 +14,19 @@ The bit at the top allows you to pick through the values of the $curauth object.
 I'm going to put some stuff here later but for now I'll just call it for you.
  */
 get_header(); ?>
-<div class="site-content"><?php
-	$curauth = ( isset( $_GET['author_name'] ) ) ? get_user_by( 'slug', $author_name ) :
-	get_userdata( intval( $author ) );
+
+<div class="site-content">
+
+	<h1><?php
+		the_author_meta( 'display_name' ); ?>
+	</h1><?php
+
+	if ( get_the_author_meta( 'description' ) ) : ?>
+		<p><?php
+			the_author_meta( 'description' ); ?>
+		</p><?php
+	endif;
+
 	while ( have_posts() ) : the_post(); ?>
 		<ul class="author-post-list">
 			<li>
@@ -26,6 +36,9 @@ get_header(); ?>
 			</li>
 		</ul><?php
 	endwhile; ?>
+
 </div><?php
+
 get_sidebar();
+
 get_footer(); ?>
