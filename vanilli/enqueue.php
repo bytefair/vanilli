@@ -14,29 +14,31 @@ function v_site_enqueues() {
 	// going to http://modernizr.com/download/ and only checking the things you
 	// will actually need.
 	wp_register_script(
-		'modernizr',
-		THEME_URL . '/components/modernizr/modernizr.js',
-		array(),
-		'2.6.2',
-		false );
+		$handle    = 'modernizr',
+		$src       = THEME_URL . '/components/modernizr/modernizr.js',
+		$deps      = array(),
+		$ver       = '2.6.2',
+		$in_footer = false );
+
 	// This file calls all the JS used in Vanilli. You can place JS here or any
 	// place you want to register, really.
 	wp_register_script(
-		'vanilli-scripts',
-		THEME_URL . '/javascript/vanilli-scripts.js',
-		array('jquery'),
-		VERSION,
-		true );
+		$handle    = 'vanilli-scripts',
+		$src       = THEME_URL . '/javascript/vanilli-scripts.js',
+		$deps      = array('jquery'),
+		$ver       = VERSION,
+		$in_footer = true );
 
 	/*** QUEUE ***/
 
 	// Let's use Sass and compile into one stylsheet. Compress for production.
 	wp_enqueue_style(
-		'main',
-		THEME_URL . '/css/main.css',
-		array(),
-		VERSION,
-		'all' );
+		$handle = 'main',
+		$src    = THEME_URL . '/css/main.css',
+		$deps   = array(),
+		$ver    = VERSION,
+		$media  = 'all' );
+
 	wp_enqueue_script( 'modernizr' );
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'vanilli-scripts' );
