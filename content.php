@@ -1,7 +1,7 @@
 <article id="post-<?php the_ID(); ?>" class="hentry" <?php post_class(); ?> role="article">
 
 	<header><?php
-		the_post_thumbnail(); ?>
+		the_post_thumbnail( 'full' ); ?>
 		<h1 class="entry-title">
 			<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php
 				the_title(); ?>
