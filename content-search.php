@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" class="hentry" <?php post_class(); ?> role="article">
 
-	<header>
+	<header class="entry-header">
 		<h1 class="entry-title">
 			<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php
 				the_title(); ?>

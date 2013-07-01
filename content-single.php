@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" class="hentry" <?php post_class(); ?> role="article">
 
-	<header><?php
+	<header class="entry-header"><?php
 		the_post_thumbnail( 'full' ); ?>
 		<h1 class="entry-title">
 			<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php
@@ -15,7 +15,7 @@
 		wp_link_pages(); ?>
 	</div>
 
-	<footer><?php
+	<footer class="entry-footer"><?php
 		v_common_taxonomy(); ?>
 	</footer><?php
 
